@@ -1,0 +1,19 @@
+.drawerHumb {
+    width: 53px;
+    height: 53px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 5px 10px;
+}
+
+.drawerHumb div {
+    width: 90%;
+    height: 5px;
+    background-color: #000;
+}

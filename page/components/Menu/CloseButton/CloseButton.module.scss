@@ -1,0 +1,19 @@
+.virtualBox {
+    width: 35px;
+    height: 40px;
+    align-self: end;
+    cursor: pointer;
+
+    div {
+      width: 43px;
+      height: 5px;
+      background-color: #fff;
+    }
+
+    .leftIks {
+      transform: rotateZ(45deg) translateX(9px) translateY(16px);
+    }
+    .rightIks {
+      transform: rotateZ(-45deg) translateX(-13px) translateY(5px);;
+    }
+  }

@@ -1,0 +1,34 @@
+.navDrawer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px 30px;
+  font-size: 2rem;
+  position: absolute;
+
+  transition: transform 300ms;
+  z-index: 15;
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  
+
+  @media screen and (min-width: 700px) {
+    width: 40vw;
+  }
+}
+
+.openDrawer {
+  transform: translateX(0vw);
+}
+
+.closeDrawer {
+  transform: translateX(-100vw);
+}

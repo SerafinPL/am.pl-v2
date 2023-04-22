@@ -1,0 +1,78 @@
+.Form {
+
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 100px auto;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5% 0%;
+    flex-wrap: wrap;
+
+
+    input,
+    button {
+      width: Min(90%, 250px);
+      margin: 5% 5%;
+    }
+
+    input {
+      width: Min(90%, 400px);
+    }
+  }
+
+  input,
+  textarea,
+  button {
+    width: 90%;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+
+  button {
+    cursor: pointer;
+    width: 250px;
+  }
+
+  textarea {
+    height: 50vh;
+  }
+
+  @media screen and (min-width: 700px) {
+    div {
+      padding: 5%;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      input {
+        width: Calc(90% - 250px);
+        margin: 0;
+      }
+      button {
+        margin: 0;
+        width: 250px;
+      }
+    }
+  }
+}
+
+.Text {
+  text-align: center;
+  margin: 100px 0;
+}
