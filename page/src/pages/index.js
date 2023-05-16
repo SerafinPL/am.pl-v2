@@ -169,7 +169,7 @@ const Home = (props) => {
       
         <Bio />
       
-        <ContactForm formKey={props.formKey} />
+        {/* <ContactForm formKey={props.formKey} /> */}
       
 
       <Footer />
@@ -179,10 +179,10 @@ const Home = (props) => {
 
 export default Home;
 
-export const getStaticProps = async () => {
-  return {
-    props: {
-      formKey: process.env.NEXT_PUBLIC_ENDP,
-    },
-  };
-};
+// export const getStaticProps = async () => {
+//   return {
+//     props: {
+//       formKey: process.env.NEXT_PUBLIC_ENDP,
+//     },
+//   };
+// };

@@ -16,10 +16,11 @@
 .siteHeader {
   width: 100vw;
   height: 100vh;
-   background-image: url('@/public/assets/desk.png.png');
+   background-image: url('../../public/assets/desk.png');
   background-repeat: no-repeat;
   background-position: 81% 15%;
   background-size: cover;
+  // background-image: url('/image.svg');
   
 
   span{
