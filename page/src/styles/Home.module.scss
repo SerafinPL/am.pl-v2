@@ -1,6 +1,7 @@
 .container {
   padding: 0;
   overflow-x: hidden;
+  background-color: #fff;
 }
 
 .main {
@@ -14,12 +15,15 @@
 }
 
 .siteHeader {
-  width: 100vw;
+
+  margin-top: 50px;
+  
+  width: auto;
   height: 100vh;
-   background-image: url('../../public/assets/desk.png');
+   background-image: url('../../public/assets/autoportret-z-maskamibig.png');
   background-repeat: no-repeat;
-  background-position: 81% 15%;
-  background-size: cover;
+  background-position: 50% 15%;
+  background-size:contain;
   // background-image: url('/image.svg');
   
 
@@ -34,10 +38,17 @@
   }
 
   .positionNormal{
-    left: 75px;
+    // left: 75px;
+    width: 100%;
+    text-align: center;
   }
 
   .positionOpen{
     left: 45%;
+  }
+
+  @media screen and (min-width: 600px) {
+    margin-top: 80px;
+
   }
 }

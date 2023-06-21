@@ -15,12 +15,11 @@ const Menu = (props) => {
         }`}
       >
         <CloseButton clicked={props.closeClick} />
-
-        <Link href="#art">Malarstwo</Link>
-        <Link href="#bio">Bio</Link>
-        <Link href="#kontakt">Kontakt</Link>
+        <h5>Anita Machura</h5>
+        <Link href="#art"><h3>Malarstwo</h3></Link>
+        <Link href="#bio"><h3>Bio</h3></Link>
+        <Link href="#kontakt"><h3>Kontakt</h3></Link>
         <img src="assets/anitkalogo.png" alt="Logo Anita Machura, Anity Machury" />
-        <p>Polski/Niemiecki/Angilksi</p>
       </nav>
     </React.Fragment>
   );
