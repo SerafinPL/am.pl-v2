@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./LookArt.module.scss";
 
 const LookArt = (props) => {
-  const [lookState, setLookState] = React.useState(false);
+  const [lookState, setLookState] = React.useState(true);
 
   const changeLookStateHandler = (state) => {
     setLookState(state);
