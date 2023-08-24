@@ -10,7 +10,6 @@
   padding: 30px 20px 30px;
   font-size: 2rem;
   position: fixed;
-
   transition: transform 300ms;
   z-index: 15;
 
@@ -18,9 +17,14 @@
     font-size: 1.2rem;
   }
 
-  a {
-    padding: 30px 20px 30px;
+  .amenu{
+    display:none;
   }
+
+  a {
+    padding: 57px 20px 30px;
+  }
+
 
   
 
@@ -28,7 +32,7 @@
     width: 40vw;
     align-items: flex-start;
 
-    h5 {
+    .AMmenu {
       text-align: center;
       width: 100%;
 
