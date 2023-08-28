@@ -8,7 +8,6 @@ const drawerHumb = (props) => (
 			<div></div>
 			<div></div>
 			<div></div>
-
 		</div>
 	);
 

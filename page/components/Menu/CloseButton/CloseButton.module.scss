@@ -19,3 +19,92 @@
       transform: rotateZ(-45deg) translateX(-13px) translateY(5px);;
     }
   }
+
+  section.model {
+    height: 50px;
+    top: 0px;
+    float: left;
+    width: 50px;
+    position: fixed;
+    z-index: 100;
+
+    .menu {
+      height: 50px;
+      width: 50px;
+      position: relative;
+      margin: auto;
+      padding-top: 7.5px;
+      border: 2.5px solid transparent;
+      border-radius: 50%;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    
+    .bar {
+      height: 2.5px;
+      width: 35px;
+      display: block;
+      margin: 7.5px auto;
+      position: relative;
+      background-color: #000;
+      border-radius: 2.5px;
+      transition: 0.4s;
+    }
+
+    & {
+      background-color: transparent;
+    }
+
+    & .menu {
+      overflow: hidden;
+    }
+
+    & .menu:after {
+      content: '';
+      width: 90%;
+      height: 90%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      border: 2.5px solid transparent;
+      border-radius: 50%;
+    }
+
+    & .menu:hover:after {
+      animation: circle-creation 1s forwards;
+    }
+
+    & .menu:hover .bar:nth-of-type(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    & .menu:hover .bar:nth-of-type(2) {
+      transform: translateX(50px);
+      transition: 0.6s;
+    }
+
+    & .menu:hover .bar:nth-of-type(3) {
+      transform: translateY(-13.5px) rotate(-45deg);
+    }
+
+    @keyframes circle-creation {
+      0% {
+        border-color: transparent;
+        transform: rotate(0deg);
+      }
+      25% {
+        border-color: transparent #000 transparent transparent;
+        transform: rotate(-35deg);
+      }
+      50% {
+        border-color: transparent #000  #000 transparent;
+      }
+      75% {
+        border-color: transparent #000 #000 #000;
+      }
+      100% {
+        border-color: #000;
+        transform: rotate(-300deg);
+      }
+    }
+  }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./Menu.module.scss";
 
 import CloseButton from "./CloseButton/CloseButton";
+import CloseButtonNew from "./CloseButton/CloseButtonNew"
 
 const Menu = (props) => {
   return (
@@ -14,7 +15,8 @@ const Menu = (props) => {
           props.open ? styles.openDrawer : styles.closeDrawer
         }`}
       >
-        <CloseButton clicked={props.closeClick} />
+        {/* <CloseButton clicked={props.closeClick} />
+        <CloseButtonNew/> */}
         <h1 className={styles.amenu}>Anita Machura</h1>
         <Link href="#art"><h3>Malarstwo</h3></Link>
         <Link href="#bio"><h3>Bio</h3></Link>
