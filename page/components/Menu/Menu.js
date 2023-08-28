@@ -14,9 +14,7 @@ const Menu = (props) => {
         className={`${styles.navDrawer} ${
           props.open ? styles.openDrawer : styles.closeDrawer
         }`}
-      >
-        {/* <CloseButton clicked={props.closeClick} />
-        <CloseButtonNew/> */}
+      >        
         <h1 className={styles.amenu}>Anita Machura</h1>
         <Link href="#art"><h3>Malarstwo</h3></Link>
         <Link href="#bio"><h3>Bio</h3></Link>
