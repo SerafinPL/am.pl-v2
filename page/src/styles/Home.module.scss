@@ -23,7 +23,7 @@
   background-image: url('../../public/assets/autoportret-z-maskamibig.png');
   background-repeat: no-repeat;
   background-position: 50% 15%;
-  background-size:contain;  
+  background-size:cover;  
 
   &.blur{
     filter: blur(8px);
@@ -54,5 +54,6 @@ span.anitaText{
 
   &.positionOpen{
     width: 35%;
+    
   }
 }
