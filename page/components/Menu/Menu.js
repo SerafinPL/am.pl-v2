@@ -3,8 +3,6 @@ import Link from "next/link";
 
 import styles from "./Menu.module.scss";
 
-import CloseButton from "./CloseButton/CloseButton";
-import CloseButtonNew from "./CloseButton/CloseButtonNew"
 
 const Menu = (props) => {
   return (
