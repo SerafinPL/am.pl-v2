@@ -8,30 +8,85 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px 20px 30px;
-  font-size: 2rem;
   position: fixed;
-
   transition: transform 300ms;
   z-index: 15;
 
-  p {
-    font-size: 1.2rem;
+  h1.amenu {
+    font-size: 1.25rem;
   }
 
-  a {
-    padding: 30px 20px 30px;
+  .logotypAM{
+    background-color: #000;
+    margin: 0 auto;
   }
 
+  a {  
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    &:first-of-type{
+      padding-top: 20px;
+    }
+  }
+
+
+  @media screen and (min-width: 350px) {
+    
+    h1.amenu{
+      font-size: 1.5rem;
+    }
+
+    a{
+      font-size: 2rem;
+    }
+    
+
+  }
+
+  @media screen and (min-width: 500px) {
+    h1.amenu{
+      font-size: 2rem;
+    }
+
+    a{
+      font-size: 2.5rem;
+    }
+
+  }
   
 
   @media screen and (min-width: 700px) {
     width: 40vw;
-    align-items: flex-start;
+    justify-content: flex-start;
 
-    h5 {
+    h1.amenu{
+      font-size: 1rem;
+      padding-top: 0px;
+      text-align: right;
+      width: 100%;
+    }
+
+    a{
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @media screen and (min-width: 1000px) {
+    
+
+    h1.amenu{
+      font-size: 2rem;
+      padding-top: 10px;
       text-align: center;
       width: 100%;
+    }
 
+    a{
+      font-size: 2.5rem;
+      text-align: center;
+      width: 100%;
     }
 
   }

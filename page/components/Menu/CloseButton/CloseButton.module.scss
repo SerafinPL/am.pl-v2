@@ -1,21 +1,96 @@
-.virtualBox {
-    width: 35px;
-    height: 40px;
-    align-self: end;
-    cursor: pointer;
 
+
+  section.model {
+    height: 50px;
+    top: 15px;
+    left: 15px;
+    float: left;
+    width: 50px;
+    position: fixed;
+    z-index: 100;
+
+    .menu {
+      height: 50px;
+      width: 50px;
+      position: relative;
+      margin: auto;
+      padding-top: 4.75px;
+      border: 2.5px solid #000;
+      border-radius: 50%;
+      transition: 0.3s;
+      cursor: pointer;
+      background-color: #ffffff99;
+
+      &.close{
+        border: 2.5px solid transparent;
+      }
+    }
     
-
-    div {
-      width: 43px;
-      height: 5px;
+    .bar {
+      height: 3px;
+      width: 35px;
+      display: block;
+      margin: 7px auto;
+      position: relative;
       background-color: #000;
+      border-radius: 40%;
+      transition: 0.4s;
     }
 
-    .leftIks {
-      transform: rotateZ(45deg) translateX(9px) translateY(16px);
+    & {
+      background-color: transparent;
     }
-    .rightIks {
-      transform: rotateZ(-45deg) translateX(-13px) translateY(5px);;
+
+    & .menu {
+      overflow: hidden;
+    }
+
+    & .menu:after {
+      content: '';
+      width: 90%;
+      height: 90%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      border: 2.5px solid transparent;
+      border-radius: 50%;
+    }
+
+    & .menu.close:after {
+      animation: circle-creation 1s forwards;
+    }
+
+    & .menu.close .bar:nth-of-type(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    & .menu.close .bar:nth-of-type(2) {
+      transform: translateX(50px);
+      transition: 0.6s;
+    }
+
+    & .menu.close .bar:nth-of-type(3) {
+      transform: translateY(-11px) rotate(-45deg);
+    }
+
+    @keyframes circle-creation {
+      0% {
+        border-color: transparent;
+        transform: rotate(0deg);
+      }
+      25% {
+        border-color: transparent #000 transparent transparent;
+        transform: rotate(-35deg);
+      }
+      50% {
+        border-color: transparent #000  #000 transparent;
+      }
+      75% {
+        border-color: transparent #000 #000 #000;
+      }
+      100% {
+        border-color: #000;
+        transform: rotate(-300deg);
+      }
     }
   }

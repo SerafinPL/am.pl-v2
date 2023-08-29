@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React, { useState } from "react";
 
 import styles from "@/styles/Home.module.scss";
 
@@ -10,6 +11,14 @@ import FadeInSection from "components/FadeFunc/FadeFunc";
 import Footer from "components/Footer/Footer";
 
 const Home = (props) => {
+
+  const [drawerState, setDrawerState] = useState(false);
+
+  const clickHandler = () => {
+    setDrawerState(!drawerState);
+  }
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -30,10 +39,9 @@ const Home = (props) => {
         />
       </Head>
 
-      <SietHeader />
+      <SietHeader clicked={clickHandler} state={drawerState}/>
       <FadeInSection >
-        <LookArt fileName="plewbig" title="Plew" idToMenu='art' >
-         
+        <LookArt fileName="plewbig" title="Plew" idToMenu='art' blured={drawerState}>         
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -44,8 +52,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="gnoznezjabig" title="Gnoznezja">
-        
+        <LookArt fileName="gnoznezjabig" title="Gnoznezja" blured={drawerState}>        
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -56,7 +63,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="jest_superbig" title="Jest super">
+        <LookArt fileName="jest_superbig" title="Jest super" blured={drawerState}>
           
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
@@ -68,7 +75,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="matkabig" title="Matka">
+        <LookArt fileName="matkabig" title="Matka" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -79,7 +86,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="autoportret-z-maskamibig" title="Autoportet z maskami">
+        <LookArt fileName="autoportret-z-maskamibig" title="Autoportet z maskami" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -90,7 +97,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="melancholikbig" title="Melancholik">
+        <LookArt fileName="melancholikbig" title="Melancholik" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -101,7 +108,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="miłoscbig" title="Miłość">
+        <LookArt fileName="miłoscbig" title="Miłość" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -112,7 +119,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="autoportretzkrolikiembig" title="Autoportret z królikiem">
+        <LookArt fileName="autoportretzkrolikiembig" title="Autoportret z królikiem" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -123,7 +130,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="melancholjabig" title="Melancholja">
+        <LookArt fileName="melancholjabig" title="Melancholja" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -134,7 +141,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="autoportretbig" title="Autoportret">
+        <LookArt fileName="autoportretbig" title="Autoportret" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -145,7 +152,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="wedrowiec" title="Wędrowiec">
+        <LookArt fileName="wedrowiec" title="Wędrowiec" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -156,7 +163,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="reminiscencje" title="Reminiscencje">
+        <LookArt fileName="reminiscencje" title="Reminiscencje" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />

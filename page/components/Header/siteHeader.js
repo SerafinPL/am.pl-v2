@@ -1,30 +1,17 @@
 import React, { useState } from "react";
 
-// import styles from './Layout.module.scss'
 import styles from "@/styles/Home.module.scss";
-import DrawerHumb from "./drawerHumburger/drawerHumburger";
+import CloseButtonNew from "../Menu/CloseButton/CloseButtonNew";
 
 import Menu from "../Menu/Menu";
 const sietHeader = (props) => {
-  const [drawerState, setDrawerState] = useState(false);
-
-    const clickHandler = () => {
-        setDrawerState(true);
-    }
-
-    const clickClose = () => {
-        setDrawerState(false);
-    }
 
   return (
     <React.Fragment>
-      <Menu open={drawerState} closeClick={clickClose}/>
-      <header className={styles.siteHeader}>
-        <DrawerHumb clicked={clickHandler} />
-        <span className={`${
-         drawerState ? styles.positionOpen : styles.positionNormal
-        }`}>Anita Machura</span>
-      </header>
+      <Menu open={props.state} />
+      <CloseButtonNew clicked={props.clicked} state={props.state} />
+      <span className={`${styles.anitaText} ${props.state ? styles.positionOpen : styles.positionNormal}`}>Anita Machura</span>
+      <header className={`${styles.siteHeader} ${props.state && styles.blur}`}></header>
     </React.Fragment>
   );
 };

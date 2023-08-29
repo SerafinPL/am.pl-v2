@@ -10,7 +10,7 @@ const LookArt = (props) => {
   };
 
   return (
-    <div className={styles.LookArt} id={props.idToMenu}>
+    <div className={`${styles.LookArt} ${props.blured && styles.blur}`} id={props.idToMenu}>
       <div
         className={`${styles.firstLook} ${lookState ? styles.firstOpen : " "}`}
       >
