@@ -1,5 +1,7 @@
 import React from "react";
 
+import ArtImage from "../ArtImage/ArtImage";
+
 import styles from "./LookArt.module.scss";
 
 const LookArt = (props) => {
@@ -11,9 +13,11 @@ const LookArt = (props) => {
 
   return (
     <div className={`${styles.LookArt} ${props.blured && styles.blur}`} id={props.idToMenu}>
+      
       <div
         className={`${styles.firstLook} ${lookState ? styles.firstOpen : " "}`}
       >
+        
         <img
           src={`assets/${props.fileName}.png`}
           alt={props.alt}
@@ -26,11 +30,12 @@ const LookArt = (props) => {
         }`}
       >
         <div className="empty">
-          <img
+        <ArtImage/>
+          {/* <img
             src={`assets/${props.fileName}.png`}
             alt={props.alt}
             onClick={() => changeLookStateHandler(false)}
-          />
+          /> */}
         </div>
         <div className={styles.full}>
           
