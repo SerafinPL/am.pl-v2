@@ -15,19 +15,18 @@ const LookArt = (props) => {
     <div className={`${styles.LookArt} ${props.blured && styles.blur}`} id={props.idToMenu}>
       
       <div
-        className={`${styles.firstLook} ${lookState ? styles.firstOpen : " "}`}
+        className={`${styles.firstLook} ${lookState && styles.firstOpen}`}
       >
         
-        <img
+        {/* <img
           src={`assets/${props.fileName}.png`}
           alt={props.alt}
           onClick={() => changeLookStateHandler(true)}
-        />
+        /> */}
       </div>
       <div
         className={`${styles.secondLook} ${
-          lookState ? styles.secondOpen : " "
-        }`}
+          lookState && styles.secondOpen}`}
       >
         <div className="empty">
         <ArtImage/>

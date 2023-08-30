@@ -51,7 +51,7 @@ const Home = (props) => {
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
-      <FadeInSection>
+      {/* <FadeInSection>
         <LookArt fileName="gnoznezjabig" title="Gnoznezja" blured={drawerState}>        
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
@@ -175,7 +175,7 @@ const Home = (props) => {
       </FadeInSection>
       
         <Bio />
-      
+       */}
         {/* <ContactForm formKey={props.formKey} /> */}
       
 
