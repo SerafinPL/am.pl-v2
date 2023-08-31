@@ -32,8 +32,7 @@
 
 
 .loaded {
-    // filter: blur(0px);
-    // 
+  
     animation-name: artOn;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -56,16 +55,7 @@
 
 
 .offPlaceholder {
-    animation-fill-mode: forwards;
-    animation-name: placeOff;
-    animation-duration: 2s;
-    // width: 0%;
-    // height: 0%;
-    // filter: blur(7px);
-    // visibility: hidden;
-    
-
-
+    animation: placeOff 1000ms linear 1 forwards !important;
 }
 
 @keyframes placeOff {
@@ -75,13 +65,13 @@
         filter: blur(0px);
     }
 
- 
+
     to {
         display: none !important;
         width: 0%;
         height: 0%;
         filter: blur(7px);
-        visibility: hidden;        
+        visibility: hidden;
     }
 }
 
@@ -93,19 +83,16 @@
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    background-color: transparent;
     margin: 2%;
+    background: linear-gradient(307deg, #ffffff, #000000, #ffffff);
+    background-size: 500vh 500vh;
+    animation: place-holder-imgs 3500ms linear infinite;
+    filter: blur(7px);
 
-  
-        background: linear-gradient(307deg, #ffffff, #000000, #ffffff);
-        background-size: 500vh 500vh;
-        animation: place-holder-imgs 3500ms linear infinite;
-        filter: blur(7px);
-    
 
 }
 
-  
+
 
 @keyframes place-holder-imgs {
     0% {
