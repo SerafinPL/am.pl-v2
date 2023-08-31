@@ -17,28 +17,7 @@ const ArtImage = props => {
   return (
     <div className={`${styles.ArtBox}`}>
 
-      <div className={`${styles.placeHolderImg} ${loadingState && styles.offPlaceholder}`}>
-        <div className={styles.ArtSpinner}>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-          <div className={styles.circle}></div>
-        </div>
-      </div>
-
-      <Image
+       <Image
         className={`${styles.imgArt} ${loadingState && styles.loaded}`}
         src={profilePic}
         alt="Picture of the author"
@@ -55,6 +34,12 @@ const ArtImage = props => {
 
         loading="lazy"
       />
+
+      <div className={`${styles.placeHolderImg} ${loadingState && styles.offPlaceholder}`}>
+        
+      </div>
+
+     
 
     </div>
   )
