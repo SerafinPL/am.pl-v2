@@ -10,61 +10,49 @@
   height: 100vh;
   align-items: center;
 
-  &.blur{
-    filter: blur(8px);
-    transition: filter 250ms;
+ 
+  @mixin look {
+    transition: all 800ms;
+    position: absolute;
+    top:0%;
+    display: flex;
+    background-color: #fff; 
   }
-
-  // .imgArt {
-  //   max-width: 100%;
-  //   margin: 100px 0;
-  //   max-height: 50vh;
-  //   cursor: pointer;
-  //   margin: 0;
-  // }
+ 
 
   div.firstLook {
+    @include look;
     width: 50%;
-    transition: all 800ms;
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #fff;
     min-width: 100vw;
     left: 0%;
-    position: absolute;
+
     &.firstOpen {
       left: -100%;
     }
   }
 
   div.secondLook {
+    @include look;
     width: 100%;
     min-height: 100%;
-
-    background-color: #fff;
-    transition: all 800ms;
-    position: absolute;
-    left: 110%;
-    display: flex;
+    left: 110%;    
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
-    div {
-      height: 100%;
-      padding: 25px;
-      max-height: 80vh;
-    }
-
+   
     .full {
-
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: 30%;
       min-width: 50%;
       color: #000;
+      height: 100%;
+      padding: 25px;
+      max-height: 80vh;
 
       p, h1{
         color: #000;
@@ -78,13 +66,7 @@
     }
   }
 
-  @media screen and (min-width: 600px) {
-    img {
-      
-      
-      max-height: 80vh;
-     
-    }
+  @media screen and (min-width: 500px) {    
     
     div.secondLook {
       flex-direction: row;

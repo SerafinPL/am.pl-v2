@@ -12,12 +12,12 @@ const LookArt = (props) => {
   };
 
   return (
-    <div className={`${styles.LookArt} ${props.blured && styles.blur}`} id={props.idToMenu}>
+    <div className={`${styles.LookArt}`} id={props.idToMenu}>
       
       <div
         className={`${styles.firstLook} ${lookState && styles.firstOpen}`}
       >
-        
+        <ArtImage clicked={() => changeLookStateHandler(true)}/>
         {/* <img
           src={`assets/${props.fileName}.png`}
           alt={props.alt}
@@ -28,16 +28,15 @@ const LookArt = (props) => {
         className={`${styles.secondLook} ${
           lookState && styles.secondOpen}`}
       >
-        <div className="empty">
-        <ArtImage/>
+        
+        <ArtImage clicked={() => changeLookStateHandler(false)}/>
           {/* <img
             src={`assets/${props.fileName}.png`}
             alt={props.alt}
             onClick={() => changeLookStateHandler(false)}
           /> */}
-        </div>
-        <div className={styles.full}>
-          
+        
+        <div className={styles.full}>          
           <h1>{props.title}</h1>
           <p>{props.children}</p>
         </div>
