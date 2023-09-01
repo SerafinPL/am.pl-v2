@@ -8,17 +8,7 @@ const Bio = (props) => {
       <h1>Bio</h1>
 
       <p>
-        Absolwentka malarstwa po Akademii Sztuk Pięknych w Katowicach. Dyplom
-        realizowany w pracowni malarstwa prof. Andrzeja Tobisa w 2021 roku. Moje
-        zainteresowania oscylują wokół psychologii, duchowości i aktualnych
-        wydarzeń. Swoją sztukę określiłabym jako swego rodzaju eksperymentalne
-        pole badań na temat ludzkiego umysłu, percepcji rzeczywistości i
-        zależności społeczno-kulturowych. Malarstwo jest dla mnie szczególnym
-        rodzajem autoekspresji, wynikającym z nadmiernej emocjonalności; to taka
-        taktyka wypracowana już w dzieciństwie, pozwalająca przetrwać- maluję,
-        więc żyję. Sztuka musi być ściśle powiązana z życiem, inaczej byłaby
-        nieautentyczna. Sztuka moim życiem, życie moją sztuką. Uprawiam
-        artystyczny ekshibicjonizm i cieszę się, że sztuka daje mi taka wolność.
+    Absolwentka malarstwa po Akademii Sztuk Pięknych w Katowicach. Dyplom realizowany w pracowni malarstwa prof. Andrzeja Tobisa w 2021 roku. Jej sztuka jest niezwykle emocjonalna i osobista, oparta na wątkach autobiograficznych, jednak poprzez bogactwo symboli oraz nawią- zań do klasycznego malarstwa dotyka tematów uniwersalnych. Jej oniryczne, ekspresyjne obrazy eksplorują obszary podświadomości, inspiracje zaś często znajduje w snach i wspomnieniach z dzieciństwa. Wykorzystuje rownież w pracy twórczej technikę świadomego śnienia. Interesują ją zagadnienia związane z psychologią i duchowością.W malarstwie stawia przede wszystkim na autentyczność i siłę emocjonalnego oddziaływania.
       </p>
     </div>
   );
