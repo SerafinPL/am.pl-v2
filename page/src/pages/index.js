@@ -41,7 +41,7 @@ const Home = (props) => {
 
       <SietHeader clicked={clickHandler} state={drawerState}/>
       <FadeInSection >
-        <LookArt fileName="plewbig" title="Plew" idToMenu='art' blured={drawerState}>         
+        <LookArt fileName="autoportret_z_krolikiem-kopia" title="Plew" idToMenu='art' blured={drawerState} >         
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />

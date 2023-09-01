@@ -19,13 +19,14 @@ const ArtImage = props => {
 
        <Image
         className={`${styles.imgArt} ${loadingState && styles.loaded}`}
-        src={profilePic}
+        src={props.pic}
         alt="Picture of the author"
         quality={100}
         sizes="100vw"
+        width='100'
+        height= '100'
         style={{
-          width: 'auto',
-          height: '100%',
+          
         }}
         onLoadingComplete={img => {
           setLoadingState(true)

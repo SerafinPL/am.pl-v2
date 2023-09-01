@@ -17,7 +17,7 @@ const LookArt = (props) => {
       <div
         className={`${styles.firstLook} ${lookState && styles.firstOpen}`}
       >
-        <ArtImage clicked={() => changeLookStateHandler(true)}/>
+        <ArtImage clicked={() => changeLookStateHandler(true)} pic={`/src/assets/${props.fileName}.png`} />
         {/* <img
           src={`assets/${props.fileName}.png`}
           alt={props.alt}
