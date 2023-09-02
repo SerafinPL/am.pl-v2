@@ -24,7 +24,7 @@ const ArtImage = props => {
         height= '100'
         style={{ }}
         onLoadingComplete={img => {
-          setLoadingState(false)
+          setLoadingState(true)
         }}
         onClick={props.clicked}
         loading="lazy"
