@@ -10,6 +10,20 @@ import ContactForm from "components/ContactForm/ContactForm";
 import FadeInSection from "components/FadeFunc/FadeFunc";
 import Footer from "components/Footer/Footer";
 
+import autoMaska from "../assets/autoportret-z-maskami_.jpg"
+import autoKrolik from "../assets/autoportret_z_krolikiem.jpg"
+import autoPort from "../assets/autoportret.jpg"
+import jestSuper from "../assets/jest_super.jpg"
+import matka from "../assets/matka.jpg"
+import melancholik from "../assets/melancholik.jpg"
+import melancholja from "../assets/melancholja.jpg"
+import miAoAA from "../assets/miAoAA.jpg"
+import reminiscencje from "../assets/reminiscencje.jpg"
+import plew from "../assets/plew.jpg"
+import wedrowiec from "../assets/wedrowiec.jpg"
+
+
+
 const Home = (props) => {
 
   const [drawerState, setDrawerState] = useState(false);
@@ -33,15 +47,15 @@ const Home = (props) => {
           content="Code: Kuba Koder = Jakub Grzegorzek, Design: Anita Machura"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </Head>
 
       <SietHeader clicked={clickHandler} state={drawerState}/>
       <FadeInSection >
-        <LookArt fileName="autoportret_z_krolikiem-kopia" title="Plew" idToMenu='art' blured={drawerState} >         
+        <LookArt fileName={profilePic} title="Plew" idToMenu='art' blured={drawerState} >         
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
