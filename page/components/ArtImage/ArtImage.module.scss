@@ -73,6 +73,9 @@
     animation: place-holder-imgs 3500ms linear infinite;
     filter: blur(7px);
     top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -141,7 +144,7 @@
     margin: 8px;
     border: 8px solid #fff;
     border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    animation: ldsRing 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: #fff transparent transparent transparent;
   }
   .ldsRing div:nth-child(1) {

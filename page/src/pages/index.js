@@ -55,7 +55,7 @@ const Home = (props) => {
 
       <SietHeader clicked={clickHandler} state={drawerState}/>
       <FadeInSection >
-        <LookArt fileName={profilePic} title="Plew" idToMenu='art' blured={drawerState} >         
+        <LookArt fileName={autoMaska} title="Plew" idToMenu='art' blured={drawerState} >         
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />

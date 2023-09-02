@@ -24,13 +24,14 @@ const ArtImage = props => {
         height= '100'
         style={{ }}
         onLoadingComplete={img => {
-          setLoadingState(true)
+          setLoadingState(false)
         }}
         onClick={props.clicked}
         loading="lazy"
       />
 
       <div className={`${styles.placeHolderImg} ${loadingState && styles.offPlaceholder}`}>
+      {/* <div> */}
       <div className={`${styles.ldsRing}`}><div></div><div></div><div></div><div></div></div>        
       </div>
 
