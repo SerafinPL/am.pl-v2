@@ -55,7 +55,7 @@ const Home = (props) => {
 
       <SietHeader clicked={clickHandler} state={drawerState}/>
       <FadeInSection >
-        <LookArt fileName={autoMaska} title="Plew" idToMenu='art' blured={drawerState} >         
+        <LookArt fileName={plew} title="Plew" idToMenu='art' blured={drawerState} >         
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -65,8 +65,8 @@ const Home = (props) => {
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
-      {/* <FadeInSection>
-        <LookArt fileName="gnoznezjabig" title="Gnoznezja" blured={drawerState}>        
+      <FadeInSection>
+        <LookArt fileName={miAoAA} title="Gnoznezja" blured={drawerState}>        
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -77,7 +77,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="jest_superbig" title="Jest super" blured={drawerState}>
+        <LookArt fileName={jestSuper} title="Jest super" blured={drawerState}>
           
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
@@ -89,7 +89,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="matkabig" title="Matka" blured={drawerState}>  
+        <LookArt fileName={matka} title="Matka" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -100,7 +100,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="autoportret-z-maskamibig" title="Autoportet z maskami" blured={drawerState}>  
+        <LookArt fileName={autoMaska} title="Autoportet z maskami" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -111,7 +111,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="melancholikbig" title="Melancholik" blured={drawerState}>  
+        <LookArt fileName={melancholik} title="Melancholik" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -122,7 +122,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="miłoscbig" title="Miłość" blured={drawerState}>  
+        <LookArt fileName={autoKrolik} title="Miłość" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -133,7 +133,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="autoportretzkrolikiembig" title="Autoportret z królikiem" blured={drawerState}>  
+        <LookArt fileName={autoKrolik} title="Autoportret z królikiem" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -144,7 +144,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="melancholjabig" title="Melancholja" blured={drawerState}>  
+        <LookArt fileName={melancholja} title="Melancholja" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -155,7 +155,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="autoportretbig" title="Autoportret" blured={drawerState}>  
+        <LookArt fileName={autoPort} title="Autoportret" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -166,7 +166,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="wedrowiec" title="Wędrowiec" blured={drawerState}>  
+        <LookArt fileName={wedrowiec} title="Wędrowiec" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -177,7 +177,7 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName="reminiscencje" title="Reminiscencje" blured={drawerState}>  
+        <LookArt fileName={reminiscencje} title="Reminiscencje" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
           <br />
@@ -189,7 +189,7 @@ const Home = (props) => {
       </FadeInSection>
       
         <Bio />
-       */}
+      
         {/* <ContactForm formKey={props.formKey} /> */}
       
 
