@@ -27,6 +27,11 @@
             max-height: 80vh;
         }
     }
+
+    &.blured{
+        filter: blur(7px);
+    }       
+
 }
 
 

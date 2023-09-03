@@ -12,7 +12,7 @@ const ArtImage = props => {
   const [loadingState, setLoadingState] = useState(false);
 
   return (
-    <div className={`${styles.ArtBox}`}>
+    <div className={`${styles.ArtBox} ${props.blured && styles.blured}`}>
 
        <Image
         className={`${styles.imgArt} ${loadingState && styles.loaded}`}

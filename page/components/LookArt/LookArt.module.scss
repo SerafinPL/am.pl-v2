@@ -7,8 +7,11 @@
   transition: filter 250ms;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   align-items: center;
+
+  
+  
 
  
   @mixin look {
@@ -58,7 +61,15 @@
         color: #000;
         background-color: #fff;
         padding: 2rem 0 0 2rem;
+
+        
       }
+
+      &.blured{
+        filter: blur(7px);
+      }
+
+      
     }
 
     &.secondOpen {
