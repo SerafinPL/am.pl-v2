@@ -7,8 +7,9 @@
   transition: filter 250ms;
   position: relative;
   width: 100vw;
-  height: 150vh;
+  height: 90vh;
   align-items: center; 
+  
 
  
   @mixin look {
@@ -27,9 +28,10 @@
     justify-content: center;
     min-width: 100vw;
     left: 0%;
+    height: 100%;
 
     &.firstOpen {
-      left: -1000%;
+      left: -100%;
     }
   }
 
@@ -37,9 +39,9 @@
     @include look;
     width: 100%;
     min-height: 100%;
-    left: 1100%;    
+    left: 200%;    
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 
    
@@ -50,8 +52,8 @@
       align-items: 30%;
       min-width: 50%;
       color: #000;
-      height: 100%;
-      padding: 25px;
+      height: 95%;
+      // padding: 25px;
       max-height: 80vh;
 
       p, h1{
@@ -73,20 +75,26 @@
   }
 
   @media screen and (min-width: 500px) {    
+
+    height: 80vh;
     
     div.secondLook {
       flex-direction: row;
       align-items: center;
+
+      .full{
+        height: 90%;
+      }
     }
   }
 
   @media screen and (min-width: 750px) {    
     
-    height: 130vh;
+    height: 75vh;
   }
 
   @media screen and (min-width: 1000px) {    
-    
-    height: 100vh;
+    margin-bottom: 15vh;
+    height: 70vh;
   }
 }
