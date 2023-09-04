@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
     visibility: visible;
 
     @media screen and (min-width: 500px) {
@@ -17,10 +16,13 @@
     }
 
     .imgArt {
-        max-width: 100%;
-        max-height: 75vh;
+       
         cursor: pointer;
         transition: all 2s;
+        width: auto;
+        height: auto;
+        max-width: 90%;
+        max-height: 90%;
         
 
         @media screen and (min-width: 500px) {
@@ -55,7 +57,9 @@
 
     to {
         width: auto;
-        height: 100%;
+        height: auto;
+        max-width: 90%;
+        max-height: 90%;
         filter: blur(0px);
         visibility: visible;
     }

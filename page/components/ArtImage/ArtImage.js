@@ -14,15 +14,13 @@ const ArtImage = props => {
   return (
     <div className={`${styles.ArtBox} ${props.blured && styles.blured}`}>
 
-       <Image
+      <Image
         className={`${styles.imgArt} ${loadingState && styles.loaded}`}
         src={props.fileName}
         alt="Picture of the author"
         quality={100}
         sizes="100vw"
-        width='100'
-        height= '100'
-        style={{ }}
+        // style={{ width: 'auto', height: '100%', maxHeight: '95%' }}
         onLoadingComplete={img => {
           setLoadingState(true)
         }}
@@ -31,11 +29,10 @@ const ArtImage = props => {
       />
 
       <div className={`${styles.placeHolderImg} ${loadingState && styles.offPlaceholder}`}>
-      {/* <div> */}
-      <div className={`${styles.ldsRing}`}><div></div><div></div><div></div><div></div></div>        
+        <div className={`${styles.ldsRing}`}><div></div><div></div><div></div><div></div></div>
       </div>
 
-     
+
 
     </div>
   )
