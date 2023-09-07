@@ -53,8 +53,7 @@
       min-width: 50%;
       color: #000;
       height: 95%;
-      // padding: 25px;
-      max-height: 80vh;
+      
 
       p, h1{
         color: #000;
@@ -76,25 +75,35 @@
 
   @media screen and (min-width: 500px) {    
 
-    height: 80vh;
+
+
+    height: 95vh;
     
     div.secondLook {
       flex-direction: row;
       align-items: center;
 
       .full{
-        height: 90%;
+        height: 100%;
       }
     }
+
+    // @media screen and (orientation: portrait){
+    //   height: 100vh;
+    // }
+
+    // @media screen and (orientation: landscape){
+    //   height: 100vh;
+    // }
   }
 
   @media screen and (min-width: 750px) {    
     
-    height: 75vh;
+    height: 100vh;
   }
 
   @media screen and (min-width: 1000px) {    
-    margin-bottom: 15vh;
-    height: 70vh;
+    
+    
   }
 }
