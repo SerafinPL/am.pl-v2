@@ -35,7 +35,7 @@
 .loaded {
     z-index: 7;
     animation-name: artOn;
-    animation-delay: 150ms;
+    animation-delay: 50ms;
     animation-duration: 400ms;
     animation-fill-mode: forwards;
 }
@@ -92,7 +92,7 @@
 
 .offPlaceholder {
 
-    animation: placeOff 400ms linear 1 forwards !important;
+    animation: placeOff 200ms linear 1 forwards !important;
 }
 
 @keyframes placeOff {
