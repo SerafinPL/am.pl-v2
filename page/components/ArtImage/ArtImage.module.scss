@@ -1,0 +1,165 @@
+.ArtBox {
+    max-width: 98%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: visible;
+
+    @media screen and (min-width: 500px) {
+        max-height: 85vh;
+    }
+
+    .imgArt {
+        cursor: pointer;
+        transition: all 2s;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+        @media screen and (min-width: 500px) {
+            max-height: 85vh;
+        }
+    }
+
+    &.blured {
+        filter: blur(7px);
+    }
+
+}
+
+.loaded {
+    z-index: 7;
+    animation-name: artOn;
+    animation-delay: 50ms;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes artOn {
+    from {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+        filter: blur(7px)
+    }
+
+    to {
+        width: auto;
+        height: auto;
+        max-width: 98%;
+        max-height: 98%;
+        filter: blur(0px);
+        visibility: visible;
+    }
+}
+
+.placeHolderImg {
+    z-index: 5;
+    max-height: 80vh;
+    height: 80%;
+    width: 50%;
+    position: absolute;
+    margin: 2%;
+    background: linear-gradient(307deg, #ffffff, #000000, #ffffff);
+    background-size: 500vh 500vh;
+    animation: place-holder-imgs 3500ms linear infinite;
+    filter: blur(7px);
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes place-holder-imgs {
+    0% {
+        background-position: 0% 99%
+    }
+
+    50% {
+        background-position: 100% 2%
+    }
+
+    100% {
+        background-position: 0% 99%
+    }
+}
+
+.offPlaceholder {
+
+    animation: placeOff 200ms linear 1 forwards !important;
+}
+
+@keyframes placeOff {
+    from {
+        background-position: 0% 99%;
+        filter: blur(7px);
+        top: 0%;
+        height: 80%;
+        width: 50%;
+    }
+
+    50% {
+        filter: blur(3px);
+        background-position: 100% 2%;
+        top: 20%;
+        height: 40%;
+        width: 25%;
+    }
+
+    to {
+        background-position: 100% 2%;
+        filter: blur(0px);
+        top: 50%;
+        height: 0%;
+        width: 0%;
+    }
+}
+
+
+.ldsRing {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.ldsRing div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: ldsRing 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.ldsRing div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.ldsRing div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.ldsRing div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes ldsRing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
