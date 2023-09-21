@@ -17,7 +17,6 @@
 }
 
 .siteHeader {
-  margin-top: 70px;  
   width: auto;
   height: 100vh;
   background-image: url('../../public/assets/autoportret-z-maskamibig.png');
@@ -31,29 +30,28 @@
   }
 
   @media screen and (min-width: 700px) {
-    margin-top: 80px;
     font-size: 2rem;
-
   }
 }
 
 span.anitaText{
-  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.77em;
   position: absolute;
   transition: width 500ms ease-out;
   top:12px;
+  right: 7px;
   z-index: 5;
   color: #000;
-  right: 0px;
-  text-align: center;    
+  text-align: right;    
+
 
   &.positionNormal{
-    width: 100%;
-    
+    width: 100%;    
   }
 
   &.positionOpen{
-    width: 35%;
-    
+    width: 35%;    
   }
 }
