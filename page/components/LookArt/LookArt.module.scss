@@ -7,19 +7,18 @@
   transition: filter 250ms;
   position: relative;
   width: 100vw;
-  height: 90vh;
-  align-items: center; 
+  height: 150vh;
+  align-items: left; 
+  margin-bottom: 15vh;
   
 
- 
   @mixin look {
     transition: all 300ms;
     position: absolute;
     top:0%;
     display: flex;
     background-color: #fff; 
-  }
- 
+  } 
 
   div.firstLook {
     @include look;
@@ -31,19 +30,18 @@
     height: 100%;
 
     &.firstOpen {
-      left: -100%;
+      left: -200%;
     }
   }
 
   div.secondLook {
     @include look;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     left: 200%;    
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
    
     .full {
       display: flex;
@@ -52,15 +50,12 @@
       align-items: 30%;
       min-width: 50%;
       color: #000;
-      height: 95%;
-      
+      height: 50vh;      
 
       p, h1{
         color: #000;
         background-color: #fff;
-        padding: 2rem 0 0 2rem;
-
-        
+        padding: 2rem 0 0 2rem;       
       }
 
       &.blured{
