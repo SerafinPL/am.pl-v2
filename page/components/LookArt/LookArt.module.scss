@@ -7,9 +7,9 @@
   transition: filter 250ms;
   position: relative;
   width: 100vw;
-  height: 150vh;
+  height: 140vh;
   align-items: left; 
-  margin-bottom: 15vh;
+  margin-bottom: 30vh;
   
 
   @mixin look {
@@ -48,14 +48,18 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: 30%;
-      min-width: 50%;
-      color: #000;
-      height: 50vh;      
+      // max-width: 50%;
+      width: 100%;
+      min-height: 25vh;
+      margin-right: 1%;
+      margin-left: 1%;       
 
       p, h1{
         color: #000;
         background-color: #fff;
-        padding: 2rem 0 0 2rem;       
+        margin-right: 1%;
+      margin-left: 1%;    
+        // padding: 2rem 0 0 2rem;       
       }
 
       &.blured{
@@ -68,37 +72,28 @@
     }
   }
 
-  @media screen and (min-width: 500px) {    
-
-
-
-    height: 95vh;
+  @media screen and (min-width: 750px) {    
     
     div.secondLook {
       flex-direction: row;
-      align-items: center;
+      align-items: center;      
 
       .full{
         height: 100%;
+        max-width: 50%;
+      width: auto;
       }
     }
 
-    // @media screen and (orientation: portrait){
-    //   height: 100vh;
-    // }
-
-    // @media screen and (orientation: landscape){
-    //   height: 100vh;
-    // }
   }
 
   @media screen and (min-width: 750px) {    
     
-    height: 100vh;
   }
 
   @media screen and (min-width: 1000px) {    
-    
+    height: 100vh;
+
     
   }
 }
