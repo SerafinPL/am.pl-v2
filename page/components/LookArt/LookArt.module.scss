@@ -7,19 +7,18 @@
   transition: filter 250ms;
   position: relative;
   width: 100vw;
-  height: 90vh;
-  align-items: center; 
+  height: 140vh;
+  align-items: left; 
+  margin-bottom: 30vh;
   
 
- 
   @mixin look {
     transition: all 300ms;
     position: absolute;
     top:0%;
     display: flex;
     background-color: #fff; 
-  }
- 
+  } 
 
   div.firstLook {
     @include look;
@@ -31,36 +30,36 @@
     height: 100%;
 
     &.firstOpen {
-      left: -100%;
+      left: -200%;
     }
   }
 
   div.secondLook {
     @include look;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     left: 200%;    
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
    
     .full {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: 30%;
-      min-width: 50%;
-      color: #000;
-      height: 95%;
-      
+      // max-width: 50%;
+      width: 100%;
+      min-height: 25vh;
+      margin-right: 1%;
+      margin-left: 1%;       
 
       p, h1{
         color: #000;
         background-color: #fff;
-        padding: 2rem 0 0 2rem;
-
-        
+        margin-right: 1%;
+      margin-left: 1%;    
+        // padding: 2rem 0 0 2rem;       
       }
 
       &.blured{
@@ -73,37 +72,28 @@
     }
   }
 
-  @media screen and (min-width: 500px) {    
-
-
-
-    height: 95vh;
+  @media screen and (min-width: 750px) {    
     
     div.secondLook {
       flex-direction: row;
-      align-items: center;
+      align-items: center;      
 
       .full{
         height: 100%;
+        max-width: 50%;
+      width: auto;
       }
     }
 
-    // @media screen and (orientation: portrait){
-    //   height: 100vh;
-    // }
-
-    // @media screen and (orientation: landscape){
-    //   height: 100vh;
-    // }
   }
 
   @media screen and (min-width: 750px) {    
     
-    height: 100vh;
   }
 
   @media screen and (min-width: 1000px) {    
-    
+    height: 100vh;
+
     
   }
 }

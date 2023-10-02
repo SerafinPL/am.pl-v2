@@ -190,7 +190,7 @@ const Home = (props) => {
       
         <Bio />
       
-        {/* <ContactForm formKey={props.formKey} /> */}
+        <ContactForm  />
       
 
       <Footer />
