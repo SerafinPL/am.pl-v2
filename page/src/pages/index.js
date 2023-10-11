@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 
-import styles from "@/styles/Home.module.scss";
+import styles from "../styles/Home.module.scss";
 
 import SietHeader from "components/Header/siteHeader";
 import LookArt from "components/LookArt/LookArt";
@@ -188,12 +188,12 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       
-        <Bio />
+        <Bio blured={drawerState}/>
       
-        <ContactForm  />
+        <ContactForm  blured={drawerState}/>
       
 
-      <Footer />
+      <Footer blured={drawerState}/>
     </div>
   );
 };
