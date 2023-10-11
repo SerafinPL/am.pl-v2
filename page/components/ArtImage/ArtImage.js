@@ -31,9 +31,6 @@ const ArtImage = props => {
       <div className={`${styles.placeHolderImg} ${loadingState && styles.offPlaceholder}`}>
         <div className={`${styles.ldsRing}`}><div></div><div></div><div></div><div></div></div>
       </div>
-
-
-
     </div>
   )
 }
