@@ -31,8 +31,8 @@ function Formspree(props) {
           />
           <button type="submit">Wyślij Wiadomość</button>
         </div>
+        <p className={styles.Text}>W sprawie cen obrazów zapraszam do kontaktu poprzez formularz kontaktowy</p>
       </form>
-      <p className={styles.Text}>W sprawie cen obrazów zapraszam do kontaktu poprzez formularz kontaktowy</p>
     </>
   );
 }

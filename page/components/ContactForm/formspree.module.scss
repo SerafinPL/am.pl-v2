@@ -2,48 +2,31 @@
 
   color: #000;
   text-align: left;
-
-
   display: flex;
   flex-direction: column;
   height: 100vh;
-  align-items: center;
-  width: 100%;
-  max-width: 800px;
-  margin: 100px auto;
+  align-items: flex-start;
+  width: 98%;
+  margin: 25px 1%;
 
   h1 {
     font-size: 3rem;
   }
 
-  p{
-    
-  }
 
   div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 5% 0%;
+    padding: 3% 0%;
     flex-wrap: wrap;
-
-
-    input,
-    button {
-      width: Min(90%, 250px);
-      margin: 5% 5%;
-    }
-
-    input {
-      width: Min(90%, 400px);
-    }
   }
 
   input,
   textarea,
   button {
-    width: 90%;
+    width: 100%;
     background-color: #fff;
     color: #000;
     outline: none;
@@ -54,7 +37,8 @@
 
   button {
     cursor: pointer;
-    width: 250px;
+    width: 100%;
+    margin-top: 3%;
   }
 
   textarea {
@@ -63,14 +47,9 @@
 
   @media screen and (min-width: 700px) {
     div {
-      padding: 5%;
       flex-wrap: nowrap;
       justify-content: space-between;
-
-      input {
-        width: Calc(90% - 250px);
-        margin: 0;
-      }
+ 
       button {
         margin: 0;
         width: 250px;
@@ -81,7 +60,7 @@
 
 .Text {
   text-align: center;
-  margin: 100px 0;
+  margin: 10px 1%;
   color: #000;
   text-align: left;
 }
