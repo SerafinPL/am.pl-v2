@@ -9,7 +9,7 @@
   width: 100vw;
   height: 140vh;
   align-items: left; 
-  margin-bottom: 30vh;
+  margin-bottom:10vh;
   
 
   @mixin look {
@@ -48,7 +48,6 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: 30%;
-      // max-width: 50%;
       width: 100%;
       min-height: 25vh;
       margin-right: 1%;
@@ -59,7 +58,6 @@
         background-color: #fff;
         margin-right: 1%;
       margin-left: 1%;    
-        // padding: 2rem 0 0 2rem;       
       }
 
       &.blured{
