@@ -188,12 +188,12 @@ const Home = (props) => {
         </LookArt>
       </FadeInSection>
       
-        <Bio />
+        <Bio blured={drawerState}/>
       
-        <ContactForm  />
+        <ContactForm  blured={drawerState}/>
       
 
-      <Footer />
+      <Footer blured={drawerState}/>
     </div>
   );
 };

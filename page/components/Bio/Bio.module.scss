@@ -1,23 +1,22 @@
-.Bio{
+.Bio {
     text-align: left;
     min-height: 50vh;
 
     max-width: 800px;
     color: #000;
     margin: 50px 1% 50px 1%;
+    padding-top: 80px;
 
-    h1{
+    h1 {
         margin-bottom: 5px;
     }
-    
+
 
     @media screen and (min-width: 700px) {
-        
-    
 
-    h1{
-        font-size: 3rem;
+        h1 {
+            font-size: 3rem;
+        }
     }
-    }
-   
+
 }

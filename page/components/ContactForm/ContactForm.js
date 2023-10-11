@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./formspree.module.scss";
+import blurStyle from "../../src/styles/blurStyle.module.scss";
 
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -12,7 +13,7 @@ function Formspree(props) {
   }
   return (
     <>
-      <form onSubmit={handleSubmit} className={styles.Form} id='kontakt'>
+      <form onSubmit={handleSubmit} className={`${styles.Form} ${props.blured && blurStyle.blured}`} id='kontakt'>
         <h1>Kontakt</h1>
         <textarea id="message" name="message" placeholder="Twoja wiadomość" />
         <div>

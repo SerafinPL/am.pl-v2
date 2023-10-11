@@ -1,10 +1,12 @@
 import React from "react";
 
 import styles from "./Bio.module.scss";
+import blurStyle from "../../src/styles/blurStyle.module.scss";
+
 
 const Bio = (props) => {
   return (
-    <div className={styles.Bio} id='bio'>
+    <div className={`${styles.Bio} ${props.blured && blurStyle.blured}`} id='bio'>
       <h1>Bio</h1>
 
       <p>
