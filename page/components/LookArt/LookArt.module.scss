@@ -8,8 +8,8 @@
   position: relative;
   width: 100vw;
   height: 140vh;
-  align-items: left; 
-  margin-bottom:10vh;
+  // align-items: left; 
+  // margin-bottom:10vh;
   
 
   @mixin look {
@@ -57,7 +57,7 @@
         color: #000;
         background-color: #fff;
         margin-right: 1%;
-      margin-left: 1%;    
+        margin-left: 1%;    
       }
 
       &.blured{

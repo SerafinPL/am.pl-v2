@@ -54,13 +54,12 @@ const Home = (props) => {
       </Head>
 
       <SietHeader clicked={clickHandler} state={drawerState}/>
+      <div className={styles.secondLayer}>
       <FadeInSection >
         <LookArt fileName={plew} title="Plew" idToMenu='art' blured={drawerState} >         
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           80x100 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -69,9 +68,7 @@ const Home = (props) => {
         <LookArt fileName={miAoAA} title="Gnoznezja" blured={drawerState}>        
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           100x140 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -81,9 +78,7 @@ const Home = (props) => {
           
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           110x140 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -92,9 +87,7 @@ const Home = (props) => {
         <LookArt fileName={matka} title="Matka" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           46x55 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -103,9 +96,7 @@ const Home = (props) => {
         <LookArt fileName={autoMaska} title="Autoportet z maskami" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           100x70 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -114,9 +105,7 @@ const Home = (props) => {
         <LookArt fileName={melancholik} title="Melancholik" blured={drawerState}>  
         Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           60x80 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -125,9 +114,7 @@ const Home = (props) => {
         <LookArt fileName={autoKrolik} title="Miłość" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           70x100 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -136,9 +123,7 @@ const Home = (props) => {
         <LookArt fileName={autoKrolik} title="Autoportret z królikiem" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           60x80 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -147,9 +132,7 @@ const Home = (props) => {
         <LookArt fileName={melancholja} title="Melancholja" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           200x140 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -158,9 +141,7 @@ const Home = (props) => {
         <LookArt fileName={autoPort} title="Autoportret" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           60x50 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -169,9 +150,7 @@ const Home = (props) => {
         <LookArt fileName={wedrowiec} title="Wędrowiec" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           100x140 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -180,9 +159,7 @@ const Home = (props) => {
         <LookArt fileName={reminiscencje} title="Reminiscencje" blured={drawerState}>  
           Z cyklu „Czarne słońca, czarna żółć”
           <br />
-          <br />
           140x180 cm
-          <br />
           <br />
           farba olejna na płótnie
         </LookArt>
@@ -194,6 +171,7 @@ const Home = (props) => {
       
 
       <Footer blured={drawerState}/>
+      </div>
     </div>
   );
 };

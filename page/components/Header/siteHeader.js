@@ -10,8 +10,10 @@ const sietHeader = (props) => {
     <React.Fragment>
       <Menu open={props.state} />
       <CloseButtonNew clicked={props.clicked} state={props.state} />
+      
+      <header className={`${styles.siteHeader} ${props.state && styles.blur}`}>
       <span className={`${styles.anitaText} ${props.state ? styles.positionOpen : styles.positionNormal}`}>Anita Machura</span>
-      <header className={`${styles.siteHeader} ${props.state && styles.blur}`}></header>
+      </header>
     </React.Fragment>
   );
 };
