@@ -7,9 +7,8 @@
   transition: filter 250ms;
   position: relative;
   width: 100vw;
-  height: 140vh;
-  // align-items: left; 
-  // margin-bottom:10vh;
+  height: 100vh;
+  
   
 
   @mixin look {
@@ -48,7 +47,7 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: 30%;
-      width: 100%;
+      width: 28%;
       min-height: 25vh;
       margin-right: 1%;
       margin-left: 1%;       
@@ -78,8 +77,8 @@
 
       .full{
         height: 100%;
-        max-width: 50%;
-      width: auto;
+        
+      width: 30%;
       }
     }
 
