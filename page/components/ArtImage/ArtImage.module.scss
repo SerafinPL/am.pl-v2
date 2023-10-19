@@ -38,17 +38,17 @@
 
             
             @media (orientation: landscape) {
-                height: 98%;
+                height: 98vh;
             }
         }
 
         &.landscape {     
             @media (orientation: landscape) {
-                height: 98%;
+                height: 98vh;
             }
 
             @media (orientation: portrait) {
-                width: 98%;
+                width: 98vw;
                 
             }                
         }
