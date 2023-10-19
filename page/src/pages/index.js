@@ -47,135 +47,20 @@ const Home = (props) => {
           content="Code: Kuba Koder = Jakub Grzegorzek, Design: Anita Machura"
         />
         <link rel="icon" href="/favicon.ico" />
-        {/* <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
-          rel="stylesheet"
-        /> */}
+
       </Head>
 
-      <SietHeader clicked={clickHandler} state={drawerState}/>
+      <SietHeader clicked={clickHandler} state={drawerState} />
 
-
-      
       <div className={styles.secondLayer}>
-      <GalleryAM  blured={drawerState} />         
-      {/* GalleryAM
-      <FadeInSection >
-        <LookArt fileName={plew} title="Plew" idToMenu='art' blured={drawerState} >         
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          80x100 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={miAoAA} title="Gnoznezja" blured={drawerState}>        
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          100x140 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={jestSuper} title="Jest super" blured={drawerState}>
-          
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          110x140 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={matka} title="Matka" blured={drawerState}>  
-        Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          46x55 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={autoMaska} title="Autoportet z maskami" blured={drawerState}>  
-        Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          100x70 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={melancholik} title="Melancholik" blured={drawerState}>  
-        Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          60x80 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={autoKrolik} title="Miłość" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          70x100 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={autoKrolik} title="Autoportret z królikiem" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          60x80 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={melancholja} title="Melancholja" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          200x140 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={autoPort} title="Autoportret" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          60x50 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={wedrowiec} title="Wędrowiec" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          100x140 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={reminiscencje} title="Reminiscencje" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          140x180 cm
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection> */}
-      
-        <Bio blured={drawerState}/>
-      
-        <ContactForm  blured={drawerState}/>
-      
+        <GalleryAM blured={drawerState} />
 
-      <Footer blured={drawerState}/>
+        <Bio blured={drawerState} />
+
+        <ContactForm blured={drawerState} />
+
+
+        <Footer blured={drawerState} />
       </div>
     </div>
   );

@@ -5,8 +5,7 @@ import React, { useState } from "react";
 import styles from "./ArtImage.module.scss";
 import blurStyle from "../../src/styles/blurStyle.module.scss";
 
-
-import Image from 'next/image'
+import Image from 'next/image';
 
 
 const ArtImage = props => {
@@ -22,8 +21,6 @@ const ArtImage = props => {
         alt="Picture of the author"
         quality={100}
         sizes="100vw"
-        // fill={true}
-        // style={{ width: 'auto', height: '100%', maxHeight: '95%' }}
         onLoadingComplete={img => {
           setLoadingState(true)
         }}

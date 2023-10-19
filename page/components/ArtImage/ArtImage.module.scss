@@ -40,6 +40,10 @@
             @media (orientation: landscape) {
                 height: 98%;
             }
+            @media (orientation: portrait) {
+                height: 98%;
+                
+            }  
         }
 
         &.landscape {     

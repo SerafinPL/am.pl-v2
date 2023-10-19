@@ -4,9 +4,8 @@
 
     max-width: 800px;
     color: #000;
-    margin: 150px 1% 50px 1%;
+    margin: 50px 1% 50px 1%;
     padding-top: 80px;
-
     
 
     h1 {
@@ -14,7 +13,7 @@
     }
 
     p {
-        margin-bottom: 15px;
+        margin-bottom: 75px;
         line-height: 1.7em;
     }
 
@@ -27,11 +26,6 @@
     }
 
 
-    @media screen and (min-width: 700px) {
-
-        h1 {
-            font-size: 3rem;
-        }
-    }
+    
 
 }

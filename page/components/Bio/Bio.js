@@ -14,7 +14,7 @@ const Bio = (props) => {
       </p>
 
       <h1>Wybrane wystawy:</h1>
-      <p>
+      
       <ul>
         <li>Goddamn hippies, wystawa indywidualna, Galeria Pojedyncza, 2017
         </li>
@@ -22,7 +22,7 @@ const Bio = (props) => {
         </li>
         <li>Spacer w nieznane, wystawa zbiorowa, Galeria GX, 2023
         </li>
-      </ul></p>
+      </ul>
 
     </div>
   );
