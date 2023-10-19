@@ -51,6 +51,7 @@
       height: 11vh;
       margin-right: 1%;
       margin-left: 1%;
+      padding: 13px;
 
       h2 {
         font-size: 0.75em;
@@ -79,7 +80,7 @@
     }
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 750px), (orientation: landscape) {
 
     div.secondLook {
       flex-direction: row;

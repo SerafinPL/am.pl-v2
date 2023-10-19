@@ -8,7 +8,7 @@ const sietHeader = (props) => {
 
   return (
     <React.Fragment>
-      <Menu open={props.state} />
+      <Menu open={props.state} clicked={props.clicked}/>
       <CloseButtonNew clicked={props.clicked} state={props.state} />
       
       <header className={`${styles.siteHeader} ${props.state && styles.blur}`}>
