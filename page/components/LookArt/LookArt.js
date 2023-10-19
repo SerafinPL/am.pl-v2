@@ -14,12 +14,25 @@ const LookArt = (props) => {
   return (
     <div className={`${styles.LookArt}`} id={props.idToMenu}>
       <div className={`${styles.firstLook} ${lookState && styles.firstOpen}`}>
-        <ArtImage alt={props.alt} clicked={() => changeLookStateHandler(true)} fileName={props.fileName} blured={props.blured} />
+        <ArtImage 
+        alt={props.alt} 
+        clicked={() => changeLookStateHandler(true)} 
+        fileName={props.fileName} 
+        blured={props.blured}
+        type={props.type} 
+        />
       </div>
       <div className={`${styles.secondLook} ${lookState && styles.secondOpen}`} >
-        <ArtImage alt={props.alt} clicked={() => changeLookStateHandler(false)} fileName={props.fileName} blured={props.blured}/>
+        <ArtImage 
+        alt={props.alt} 
+        clicked={() => changeLookStateHandler(false)} 
+        fileName={props.fileName} 
+        blured={props.blured} 
+        type={props.type} 
+        mini        
+        />
         <div className={`${styles.full} ${props.blured && styles.blured}`} >
-          <h1>{props.title}</h1>
+          <h2>{props.title}</h2>
           <p>{props.children}</p>
         </div>
       </div>

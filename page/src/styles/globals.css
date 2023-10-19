@@ -4,6 +4,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: filter 200ms 100ms;
+
 }
 
 html,
@@ -17,5 +19,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+li {
+  list-style-type:none;
+}
+
 
 

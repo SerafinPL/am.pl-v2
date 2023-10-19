@@ -7,18 +7,17 @@
   transition: filter 250ms;
   position: relative;
   width: 100vw;
-  height: 140vh;
-  align-items: left; 
-  margin-bottom:10vh;
-  
+  height: 100vh;
+
+
 
   @mixin look {
     transition: all 300ms;
     position: absolute;
-    top:0%;
+    top: 0%;
     display: flex;
-    background-color: #fff; 
-  } 
+    background-color: #fff;
+  }
 
   div.firstLook {
     @include look;
@@ -38,31 +37,41 @@
     @include look;
     width: 100%;
     min-height: 100vh;
-    left: 200%;    
+    left: 200%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-   
+
     .full {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      align-items: 30%;
+      // align-items: 30%;
       width: 100%;
-      min-height: 25vh;
+      height: 11vh;
       margin-right: 1%;
-      margin-left: 1%;       
+      margin-left: 1%;
 
-      p, h1{
+      h2 {
+        font-size: 0.75em;
+      }
+
+      p {
+        font-size: 0.5em;
+      }
+
+      p,
+      h2 {
         color: #000;
         background-color: #fff;
         margin-right: 1%;
-      margin-left: 1%;    
+        margin-left: 1%;
+        width: 100%;
       }
 
-      &.blured{
+      &.blured {
         filter: blur(7px);
-      }      
+      }
     }
 
     &.secondOpen {
@@ -70,28 +79,36 @@
     }
   }
 
-  @media screen and (min-width: 750px) {    
-    
+  @media screen and (min-width: 750px) {
+
     div.secondLook {
       flex-direction: row;
-      align-items: center;      
+      align-items: center;
 
-      .full{
+      
+
+      .full {
         height: 100%;
-        max-width: 50%;
-      width: auto;
+        width: 30%;
+
+        h2 {
+          font-size: 1.25em;
+        }
+
+        p {
+          font-size: 1em;
+          font-weight: bold;
+        }
       }
     }
 
   }
 
-  @media screen and (min-width: 750px) {    
-    
-  }
+  @media screen and (min-width: 750px) {}
 
-  @media screen and (min-width: 1000px) {    
+  @media screen and (min-width: 1000px) {
     height: 100vh;
 
-    
+
   }
 }

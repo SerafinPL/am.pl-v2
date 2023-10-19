@@ -22,7 +22,7 @@ import reminiscencje from "../assets/reminiscencje.jpg"
 import plew from "../assets/plew.jpg"
 import wedrowiec from "../assets/wedrowiec.jpg"
 
-
+import GalleryAM from "../../components/GalleryAM/GalleryAM";
 
 const Home = (props) => {
 
@@ -47,153 +47,21 @@ const Home = (props) => {
           content="Code: Kuba Koder = Jakub Grzegorzek, Design: Anita Machura"
         />
         <link rel="icon" href="/favicon.ico" />
-        {/* <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
-          rel="stylesheet"
-        /> */}
+
       </Head>
 
-      <SietHeader clicked={clickHandler} state={drawerState}/>
-      <FadeInSection >
-        <LookArt fileName={plew} title="Plew" idToMenu='art' blured={drawerState} >         
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          80x100 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={miAoAA} title="Gnoznezja" blured={drawerState}>        
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          100x140 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={jestSuper} title="Jest super" blured={drawerState}>
-          
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          110x140 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={matka} title="Matka" blured={drawerState}>  
-        Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          46x55 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={autoMaska} title="Autoportet z maskami" blured={drawerState}>  
-        Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          100x70 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={melancholik} title="Melancholik" blured={drawerState}>  
-        Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          60x80 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={autoKrolik} title="Miłość" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          70x100 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={autoKrolik} title="Autoportret z królikiem" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          60x80 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={melancholja} title="Melancholja" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          200x140 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={autoPort} title="Autoportret" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          60x50 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={wedrowiec} title="Wędrowiec" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          100x140 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      <FadeInSection>
-        <LookArt fileName={reminiscencje} title="Reminiscencje" blured={drawerState}>  
-          Z cyklu „Czarne słońca, czarna żółć”
-          <br />
-          <br />
-          140x180 cm
-          <br />
-          <br />
-          farba olejna na płótnie
-        </LookArt>
-      </FadeInSection>
-      
-        <Bio blured={drawerState}/>
-      
-        <ContactForm  blured={drawerState}/>
-      
+      <SietHeader clicked={clickHandler} state={drawerState} />
 
-      <Footer blured={drawerState}/>
+      <div className={styles.secondLayer}>
+        <GalleryAM blured={drawerState} />
+
+        <Bio blured={drawerState} />
+
+        <ContactForm blured={drawerState} />
+
+
+        <Footer blured={drawerState} />
+      </div>
     </div>
   );
 };

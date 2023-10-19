@@ -3,7 +3,6 @@
   overflow-x: hidden;
   background-color: #fff;
   
-  
 }
 
 .main {
@@ -16,6 +15,12 @@
   align-items: center;
 }
 
+.secondLayer{
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+}
+
 .siteHeader {
   width: auto;
   height: 100vh;
@@ -23,6 +28,10 @@
   background-repeat: no-repeat;
   background-position: 50% 15%;
   background-size:cover;  
+  background-attachment: fixed;
+  // position: relative;
+
+  
 
   &.blur{
     filter: blur(8px);
@@ -35,23 +44,23 @@
 }
 
 span.anitaText{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 1.77em;
-  position: absolute;
-  transition: width 500ms ease-out;
-  top:12px;
+  font-size: 1.5em;
+  position: fixed;
+  top: 12px;
   right: 7px;
-  z-index: 5;
   color: #000;
   text-align: right;    
+  z-index: 0;
+  display: block;
 
 
   &.positionNormal{
-    width: 100%;    
+    // width: 100%;    
   }
 
   &.positionOpen{
-    width: 35%;    
+    // width: 35%; 
+    // z-index: 1; 
   }
 }
