@@ -22,7 +22,7 @@ import reminiscencje from "../assets/reminiscencje.jpg"
 import plew from "../assets/plew.jpg"
 import wedrowiec from "../assets/wedrowiec.jpg"
 
-
+import GalleryAM from "../../components/GalleryAM/GalleryAM";
 
 const Home = (props) => {
 
@@ -54,7 +54,12 @@ const Home = (props) => {
       </Head>
 
       <SietHeader clicked={clickHandler} state={drawerState}/>
+
+
+      
       <div className={styles.secondLayer}>
+      <GalleryAM  blured={drawerState} />         
+      {/* GalleryAM
       <FadeInSection >
         <LookArt fileName={plew} title="Plew" idToMenu='art' blured={drawerState} >         
           Z cyklu „Czarne słońca, czarna żółć”
@@ -163,7 +168,7 @@ const Home = (props) => {
           <br />
           farba olejna na płótnie
         </LookArt>
-      </FadeInSection>
+      </FadeInSection> */}
       
         <Bio blured={drawerState}/>
       

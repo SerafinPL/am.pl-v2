@@ -1,7 +1,8 @@
+
+
 .ArtBox {
-    max-width: 98%;
-    height: 100vh;
-    width: 100%;
+    max-height: 100vh;
+    width: 100vw;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -9,33 +10,61 @@
     flex-direction: column;
     visibility: visible;
 
+
+    @media screen and (min-width: 750px) {
+        max-height: 100vh;
+    }
+
+    &.miniArtBox {
+        max-height: 89vh;
+        padding: 13px;
+        @media screen and (min-width: 750px) {
+            width: 70%;
+        }
+    
+    }
+
     .imgArt {
         cursor: pointer;
         transition: all 2s;
 
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 98%;
+        max-height: 98%;
+        width: auto;
+        height: auto;
 
-        @media (orientation: landscape) {
-            width: auto;
-            height: 98%;
+
+        &.portrait {
+
+            
+            @media (orientation: landscape) {
+                height: 98%;
+            }
         }
 
-        @media (orientation: portrait) {
-            width: 98%;
-            height: auto;
+        &.landscape {     
+            @media (orientation: landscape) {
+                height: 98%;
+            }
+
+            @media (orientation: portrait) {
+                width: 98%;
+                
+            }                
         }
 
+        
 
-        &.blured {
-            filter: blur(7px);
-        }
+        // @media (orientation: portrait) {
+        //     width: 98%;
+        // }
+
 
     }
 
     // LOADING SECTOR
 
-    .loaded {
+    .loaded{
         z-index: 7;
         animation-name: artOn;
         animation-delay: 50ms;
@@ -43,19 +72,18 @@
         animation-fill-mode: forwards;
     }
 
+   
+
     @keyframes artOn {
         from {
-            width: 0px;
-            height: 0px;
+         
             visibility: hidden;
             filter: blur(7px)
         }
 
         to {
-            width: auto;
-            height: auto;
-            max-width: 98%;
-            max-height: 98%;
+
+         
             filter: blur(0px);
             visibility: visible;
         }
