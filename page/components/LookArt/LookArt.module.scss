@@ -9,6 +9,10 @@
   width: 100vw;
   height: 100vh;
 
+  &:last-child{
+    margin-bottom: 200px;
+  }
+
 
 
   @mixin look {
