@@ -35,8 +35,7 @@
 
 
         &.portrait {
-
-            
+           
             @media (orientation: landscape) {
                 height: 98vh;
             }
@@ -48,8 +47,7 @@
             }
 
             @media (orientation: portrait) {
-                width: 98vw;
-                
+                width: 98vw;                
             }                
         }
 
