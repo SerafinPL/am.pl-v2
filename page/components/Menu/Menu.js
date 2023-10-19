@@ -21,9 +21,9 @@ const Menu = (props) => {
         </div>
         <div className={styles.boxMenu}>
           <div className={styles.linksMenu}>
-            <Link href="#art"><h3>Malarstwo</h3></Link>
-            <Link href="#bio"><h3>Bio</h3></Link>
-            <Link href="#kontakt"><h3>Kontakt</h3></Link>
+            <Link href="#art" onClick={props.clicked}><h3>Malarstwo</h3></Link>
+            <Link href="#bio" onClick={props.clicked}><h3>Bio</h3></Link>
+            <Link href="#kontakt" onClick={props.clicked}><h3>Kontakt</h3></Link>
           </div>
           <div className={styles.logoMenu}>
             <Image src={wedrowiec}
