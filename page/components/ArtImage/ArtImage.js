@@ -20,12 +20,12 @@ const ArtImage = props => {
         src={props.fileName}
         alt="Picture of the author"
         quality={100}
-        sizes="100vw"
+        sizes="98vw"
         onLoadingComplete={img => {
           setLoadingState(true)
         }}
         onClick={props.clicked}
-        loading="lazy"
+        // loading="lazy"
       />
 
       <div className={`${styles.placeHolderImg} ${loadingState && styles.offPlaceholder}`}>
