@@ -97,11 +97,11 @@
         width: 30%;
 
         h2 {
-          font-size: 1.25em;
+          font-size: 2.25em;
         }
 
         p {
-          font-size: 1em;
+          font-size: 1.75em;
           font-weight: bold;
         }
       }
@@ -115,5 +115,16 @@
     height: 100vh;
 
 
+    .full {
+      
+      h2 {
+        font-size: 3.33em;
+      }
+
+      p {
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+    }
   }
 }

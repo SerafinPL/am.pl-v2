@@ -29,9 +29,7 @@
   background-position: 50% 15%;
   background-size:cover;  
   background-attachment: fixed;
-  // position: relative;
-
-  
+ 
 
   &.blur{
     filter: blur(8px);
@@ -48,19 +46,10 @@ span.anitaText{
   font-size: 1.5em;
   position: fixed;
   top: 12px;
-  right: 7px;
+  right: 27px;
   color: #000;
   text-align: right;    
   z-index: 0;
   display: block;
 
-
-  &.positionNormal{
-    // width: 100%;    
-  }
-
-  &.positionOpen{
-    // width: 35%; 
-    // z-index: 1; 
-  }
 }
