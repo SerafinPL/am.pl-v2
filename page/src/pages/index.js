@@ -17,7 +17,6 @@ const Home = (props) => {
     setDrawerState(!drawerState);
   }
 
-
   return (
     <div className={styles.container} >
       <Head>
@@ -34,17 +33,12 @@ const Home = (props) => {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
-
       <SietHeader clicked={clickHandler} state={drawerState} />
 
       <div className={styles.secondLayer} onClick={() => setDrawerState(false)}>
         <GalleryAM blured={drawerState} />
-
         <Bio blured={drawerState} />
-
         <ContactForm blured={drawerState} />
-
-
         <Footer blured={drawerState} />
       </div>
     </div>
