@@ -29,6 +29,44 @@
   background-position: 50% 15%;
   background-size:cover;  
   background-attachment: fixed;
+
+  
+    animation-name: curtine;
+    animation-delay: 50ms;
+    animation-duration: 17s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+
+@keyframes curtine {
+    0% {
+      background-image: url('../assets/naStrone/melancholik.jpg');
+    }
+
+    20% {
+     
+      background-image: url('../assets/naStrone/ObszarKompozycji.jpg');
+    }
+
+    40% {
+     
+      background-image: url('../assets/naStrone/ostatnidzien.jpg');
+    }
+
+    60% {
+     
+      background-image: url('../assets/naStrone/pandemicdream.jpg');
+    }
+
+    80% {
+     
+      background-image: url('../assets/naStrone/wedrowiec.jpg');
+    }
+
+    100% {
+      background-image: url('../assets/naStrone/melancholik.jpg');
+    }
+}
  
 
   &.blur{
