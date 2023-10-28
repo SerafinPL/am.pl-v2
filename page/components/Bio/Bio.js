@@ -33,7 +33,6 @@ const Bio = (props) => {
           Spacer w nieznane, wystawa zbiorowa</a>, Galeria GX, 2023
         </li>
       </ul>
-
     </div>
   );
 };
