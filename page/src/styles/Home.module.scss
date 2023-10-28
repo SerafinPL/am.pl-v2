@@ -24,7 +24,7 @@
 .siteHeader {
   width: auto;
   height: 100vh;
-  // background-image: url('../../public/assets/autoportret-z-maskamibig.png');
+  background-image: url('../assets/naStrone/melancholik.jpg');
   background-repeat: no-repeat;
   background-position: 50% 15%;
   background-size:cover;  
@@ -39,27 +39,27 @@
 
 
 @keyframes curtine {
-    0%,19.999% {
+    0%,19.9% {
       background-image: url('../assets/naStrone/melancholik.jpg');
     }
 
-    20%,39.999% {
+    20%,39.9% {
      
       background-image: url('../assets/naStrone/ObszarKompozycji.jpg');
     }
 
-    40%,59.999% {
+    40%,59.9% {
      
       background-image: url('../assets/naStrone/ostatnidzien.jpg');
     }
 
-    60%,79.999% {
+    60%,79.9% {
      
       background-image: url('../assets/naStrone/pandemicdream.jpg');
     }
 
 
-    80%,99.999% {
+    80%,99.9% {
      
       background-image: url('../assets/naStrone/wedrowiec.jpg');
     }
