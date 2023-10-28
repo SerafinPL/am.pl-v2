@@ -10,11 +10,18 @@ const Bio = (props) => {
       <h1>Bio</h1>
 
       <p>
-        Absolwentka malarstwa po Akademii Sztuk Pięknych w Katowicach. Dyplom realizowany w pracowni malarstwa prof. Andrzeja Tobisa w 2021 roku. Jej sztuka jest niezwykle emocjonalna i osobista, oparta na wątkach autobiograficznych, jednak poprzez bogactwo symboli oraz nawiązań do klasycznego malarstwa dotyka tematów uniwersalnych. Jej oniryczne, ekspresyjne obrazy eksplorują obszary podświadomości, inspiracje zaś często znajduje wspomnieniach z dzieciństwa i snach, korzystając także z techniki świadomego śnienia. Interesują ją zagadnienia związane z psychologią i duchowością.
+        Absolwentka malarstwa Akademii Sztuk Pięknych w Katowicach.
+        Dyplom realizowała w pracowni malarstwa prof.
+        Andrzeja Tobisa w 2021 roku.
+        Jej sztuka jest niezwykle emocjonalna i osobista, oparta na wątkach autobiograficznych, 
+        jednak poprzez bogactwo symboli oraz nawiązań do klasycznego malarstwa, dotyka tematów uniwersalnych.
+        Jej oniryczne, ekspresyjne obrazy eksplorują obszary podświadomości, 
+        inspiracje często znajduje we wspomnieniach z dzieciństwa i snach, korzystając między innymi z techniki świadomego śnienia. 
+        Interesują ją zagadnienia związane z psychologią i duchowością.
       </p>
 
       <h1>Wybrane wystawy:</h1>
-      
+
       <ul>
         <li>Goddamn hippies, wystawa indywidualna, Galeria Pojedyncza, 2017
         </li>
