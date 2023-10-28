@@ -2,7 +2,7 @@
   padding: 0;
   overflow-x: hidden;
   background-color: #fff;
-  
+
 }
 
 .main {
@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.secondLayer{
+.secondLayer {
   z-index: 1;
   position: relative;
   background-color: #fff;
@@ -24,53 +24,67 @@
 .siteHeader {
   width: auto;
   height: 100vh;
+  /*loading speed*/
   background-image: url('../assets/naStrone/melancholik.jpg');
+  background-image: url('../assets/naStrone/ObszarKompozycji.jpg');
+  background-image: url('../assets/naStrone/ostatnidzien.jpg');
+  background-image: url('../assets/naStrone/pandemicdream.jpg');
+  background-image: url('../assets/naStrone/wedrowiec.jpg');
+  background-image: url('../assets/naStrone/melancholik.jpg');
+  /*EOF loading speed*/
+
   background-repeat: no-repeat;
   background-position: 50% 15%;
-  background-size:cover;  
+  background-size: cover;
   background-attachment: fixed;
 
-  
-    animation-name: curtine;
-    animation-delay: 50ms;
-    animation-duration: 17s;
-    // animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+
+  animation-name: curtine;
+  animation-delay: 50ms;
+  animation-duration: 17s;
+  // animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 
 
-@keyframes curtine {
-    0%,19.9% {
+  @keyframes curtine {
+
+    0%,
+    19.9% {
       background-image: url('../assets/naStrone/melancholik.jpg');
     }
 
-    20%,39.9% {
-     
+    20%,
+    39.9% {
+
       background-image: url('../assets/naStrone/ObszarKompozycji.jpg');
     }
 
-    40%,59.9% {
-     
+    40%,
+    59.9% {
+
       background-image: url('../assets/naStrone/ostatnidzien.jpg');
     }
 
-    60%,79.9% {
-     
+    60%,
+    79.9% {
+
       background-image: url('../assets/naStrone/pandemicdream.jpg');
     }
 
 
-    80%,99.9% {
-     
+    80%,
+    99.9% {
+
       background-image: url('../assets/naStrone/wedrowiec.jpg');
     }
 
     100% {
       background-image: url('../assets/naStrone/melancholik.jpg');
     }
-}
- 
+  }
 
-  &.blur{
+
+  &.blur {
     filter: blur(8px);
     transition: filter 250ms;
   }
@@ -80,14 +94,14 @@
   }
 }
 
-span.anitaText{
+span.anitaText {
   font-weight: bold;
   font-size: 1.5em;
   position: fixed;
   top: 12px;
   right: 57px;
   color: #000;
-  text-align: right;    
+  text-align: right;
   z-index: 0;
   display: block;
 
