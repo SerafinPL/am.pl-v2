@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Image from 'next/image'
 
-import wedrowiec from "../../public/assets/anitkalogo.png"
+import wedrowiec from "../../src/assets/am.png"
 
 import styles from "./Menu.module.scss";
 
