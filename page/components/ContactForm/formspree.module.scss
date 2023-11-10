@@ -4,14 +4,21 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   align-items: flex-start;
-  width: 70vw;
+  width: 98vw;
   margin: 25px 1%;
   padding-top: 80px;
+  padding-bottom: 80px;
+
 
   @media screen and (min-width : 500px) {
     padding-left: 80px;  
+    width: calc(98vw - 80px );
+  }
+
+  @media screen and (min-width : 800px) {
+    width: calc(70vw - 80px );
   }
 
   h1 {
@@ -25,6 +32,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 3% 0%;
+
     flex-wrap: wrap;
   }
 
@@ -38,6 +46,7 @@
     border: 1px solid #000;
     padding: 5px;
     font-size: 1.5rem;
+    
   }
 
   button {
@@ -48,6 +57,7 @@
 
   textarea {
     height: 50vh;
+    min-height: 10rem;
   }
 
   @media screen and (min-width: 700px) {

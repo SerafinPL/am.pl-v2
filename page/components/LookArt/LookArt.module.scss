@@ -7,7 +7,7 @@
   transition: filter 250ms;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 90vh;
 
 
   @mixin look {
@@ -35,7 +35,7 @@
   div.secondLook {
     @include look;
     width: 100%;
-    min-height: 100vh;
+    height: 100;
     left: 200%;
     flex-direction: column;
     justify-content: flex-start;
@@ -44,7 +44,7 @@
     .full {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       // align-items: 30%;
       width: 100%;
       height: 11vh;
@@ -53,11 +53,11 @@
       padding: 13px;
 
       h2 {
-        font-size: 0.75em;
+        font-size: 1.75em;
       }
 
       p {
-        font-size: 0.5em;
+        font-size: 1.5em;
       }
 
       p,
@@ -79,24 +79,27 @@
     }
   }
 
-  @media screen and (min-width: 750px), (orientation: landscape) {
+  @media screen and (min-width: 750px),
+  (orientation: landscape) {
+
+    height: 100vh;
 
     div.secondLook {
       flex-direction: row;
       align-items: center;
+      height: 100vh;
 
-      
 
       .full {
         height: 100%;
         width: 30%;
 
         h2 {
-          font-size: 2.25em;
+          font-size: 1.75em;
         }
 
         p {
-          font-size: 1.75em;
+          font-size: 1.25em;
           font-weight: bold;
         }
       }
@@ -111,7 +114,7 @@
 
 
     .full {
-      
+
       h2 {
         font-size: 3.33em;
       }
