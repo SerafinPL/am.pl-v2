@@ -18,7 +18,7 @@ const LookArt = (props) => {
         alt={props.alt} 
         clicked={() => changeLookStateHandler(true)} 
         fileName={props.fileName} 
-        blured={props.blured}
+        blured={props.blured} ratio={props.ratio}
         type={props.type} 
         />
       </div>
