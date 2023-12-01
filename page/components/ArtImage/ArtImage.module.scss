@@ -22,8 +22,7 @@
     }
 
     .imgArt {
-        cursor: pointer;
-        transition: all 2s;
+        // transition: all 2s;
         max-width: 98vw;
         max-height: 98vh;
         width: auto;
@@ -46,7 +45,6 @@
                 width: 98vw;
             }
         }
-
     }
 
     // LOADING SECTOR
@@ -66,8 +64,5 @@
         position: absolute;
         
     }
-
-
-
 
 }
