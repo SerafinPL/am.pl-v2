@@ -25,7 +25,7 @@ const ArtImage = props => {
           ${props.type && styles[props.type]} 
         `}
           src={props.fileName}
-          alt="Picture of the author"
+          alt={props.alt}
           quality={100}
           sizes="98vw"
           onLoadingComplete={img => {
@@ -35,7 +35,7 @@ const ArtImage = props => {
         />
 
         <Text className={`${styles.skeletonText}`} display={`${loadingState ? 'none' : 'block'} `} sx={{ zIndex: 15, color: '#000000', visibility: 'visible', position: 'absolute' }}>Ładowanie obrazów wysokiej jakości</Text>
-      </Skeleton>
+        </Skeleton>
     </div>
   )
 }
