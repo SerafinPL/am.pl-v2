@@ -16,7 +16,7 @@ const ArtImage = props => {
     <div className={`${styles.ArtBox} ${props.blured && blurStyle.blured} ${props.mini && styles.miniArtBox}`}>
       <Skeleton fitContent
         className={`${styles.skeletonBase}`}
-        startColor='red.500' endColor="yellow.200"
+        startColor={props.startColor} endColor={props.endColor}
         isLoaded={loadingState}>
 
         <Image

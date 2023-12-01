@@ -24,79 +24,80 @@ const GalleryAM = (props) => {
   return (
     <div className={`${props.blured && blurStyle.blured}`} id='art'>
       <FadeInSection >
-        <LookArt fileName={plew} title="Plew" blured={props.blured}
-          type='portrait' >
+        <LookArt startColor='teal.500' endColor='red.500' fileName={plew}
+          title="Plew" blured={props.blured} type='portrait' >
           100x80 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName={miAoAA} title="Miłość" blured={props.blured}
-          type='portrait' >
+        <LookArt startColor='yellow.700' endColor='green.900' fileName={miAoAA}
+          title="Miłość" blured={props.blured} type='portrait' >
           100x70 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName={jestSuper} title="2020" blured={props.blured}
-          type='landscape'  >
+        <LookArt startColor='red.600' endColor='gray.900' fileName={jestSuper}
+          title="2020" blured={props.blured} type='landscape'  >
           110x140 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName={matka} title="Matka" blured={props.blured}
-          type='portrait'>           55x46 cm
+        <LookArt startColor='yellow.300' endColor='teal.600' fileName={matka}
+          title="Matka" blured={props.blured} type='portrait'>
+          55x46 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName={autoMaska} title="Autoportet z maskami" blured={props.blured}
-          type='portrait'> 
+        <LookArt startColor='pink.200' endColor='cyan.400' fileName={autoMaska}
+          title="Autoportet z maskami" blured={props.blured} type='portrait'>
           100x70 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName={melancholik} title="Melancholik" blured={props.blured}
-          type='portrait'>           80x60 cm
+        <LookArt startColor='teal.300' endColor='yellow.300' fileName={melancholik}
+          title="Melancholik" blured={props.blured} type='portrait'>
+          80x60 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName={autoKrolik} title="Ostatni dzień" blured={props.blured}
-          type='portrait'>           80x60 cm
+        <LookArt startColor='gray.300' endColor='orange.800' fileName={autoKrolik}
+          title="Ostatni dzień" blured={props.blured} type='portrait'>
+          80x60 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName={melancholja} title="Melancholja" blured={props.blured}
-          type='portrait'>  
+        <LookArt startColor='gray.200' endColor='black' fileName={melancholja}
+          title="Melancholja" blured={props.blured} type='portrait'>
           200x140 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt fileName={autoPort} title="Autoportret" blured={props.blured}
-          type='portrait'>           60x50 cm
+        <LookArt startColor='yellow.100' endColor='red.500' fileName={autoPort}
+          title="Autoportret" blured={props.blured} type='portrait'>           
+          60x50 cm
           <br />
           farba olejna na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
-        <LookArt
-          fileName={wedrowiec}
-          title="Wędrowiec"
-          blured={props.blured}
-          type='landscape'  >
+        <LookArt startColor='teal.300' endColor='blue.700' fileName={wedrowiec}
+          title="Wędrowiec" blured={props.blured} type='landscape'  >
           100x140 cm
           <br />
           farba olejna na płótnie
@@ -104,10 +105,8 @@ const GalleryAM = (props) => {
       </FadeInSection>
       <FadeInSection>
         <LookArt
-          fileName={reminiscencje}
-          title="Reminiscencje"
-          blured={props.blured}
-          type='landscape'  >
+          startColor='blue.400' endColor='green.400' fileName={reminiscencje}
+          title="Reminiscencje" blured={props.blured} type='landscape'  >
           140x180 cm
           <br />
           farba olejna na płótnie

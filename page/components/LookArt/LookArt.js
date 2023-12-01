@@ -15,6 +15,7 @@ const LookArt = (props) => {
     <div className={`${styles.LookArt}`} id={props.idToMenu}>
       <div className={`${styles.firstLook} ${lookState && styles.firstOpen}`}>
         <ArtImage 
+        startColor={props.startColor} endColor={props.endColor}
         alt={props.alt} 
         clicked={() => changeLookStateHandler(true)} 
         fileName={props.fileName} 
@@ -24,6 +25,7 @@ const LookArt = (props) => {
       </div>
       <div className={`${styles.secondLook} ${lookState && styles.secondOpen}`} >
         <ArtImage 
+        startColor={props.startColor} endColor={props.endColor}
         alt={props.alt} 
         clicked={() => changeLookStateHandler(false)} 
         fileName={props.fileName} 
