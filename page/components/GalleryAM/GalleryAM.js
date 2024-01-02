@@ -1,7 +1,7 @@
 import React from "react";
 
 import autoMaska from "../../src/assets/autoportret-z-maskami_.jpg"
-import autoKrolik from "../../src/assets/autoportret_z_krolikiem.jpg"
+import autoKrolik from "../../src/assets/ostatnidzien.jpg"
 import autoPort from "../../src/assets/autoportret.jpg"
 import jestSuper from "../../src/assets/jest_super.jpg"
 import matka from "../../src/assets/matka.jpg"
@@ -28,7 +28,7 @@ const GalleryAM = (props) => {
           title="Plew" blured={props.blured} type='portrait' >
           100x80 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -36,7 +36,7 @@ const GalleryAM = (props) => {
           title="Miłość" blured={props.blured} type='portrait' >
           100x70 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -44,7 +44,7 @@ const GalleryAM = (props) => {
           title="2020" blured={props.blured} type='landscape'  >
           110x140 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -52,7 +52,7 @@ const GalleryAM = (props) => {
           title="Matka" blured={props.blured} type='portrait'>
           55x46 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -60,7 +60,7 @@ const GalleryAM = (props) => {
           title="Autoportet z maskami" blured={props.blured} type='portrait'>
           100x70 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -68,7 +68,7 @@ const GalleryAM = (props) => {
           title="Melancholik" blured={props.blured} type='portrait'>
           80x60 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -76,7 +76,7 @@ const GalleryAM = (props) => {
           title="Ostatni dzień" blured={props.blured} type='portrait'>
           80x60 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -84,7 +84,7 @@ const GalleryAM = (props) => {
           title="Melancholja" blured={props.blured} type='portrait'>
           200x140 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -92,7 +92,7 @@ const GalleryAM = (props) => {
           title="Autoportret" blured={props.blured} type='portrait'>           
           60x50 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -100,7 +100,7 @@ const GalleryAM = (props) => {
           title="Wędrowiec" blured={props.blured} type='landscape'  >
           100x140 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
       <FadeInSection>
@@ -109,7 +109,7 @@ const GalleryAM = (props) => {
           title="Reminiscencje" blured={props.blured} type='landscape'  >
           140x180 cm
           <br />
-          farba olejna na płótnie
+          olej na płótnie
         </LookArt>
       </FadeInSection>
 

@@ -34,7 +34,7 @@ const ArtImage = props => {
           // onClick={props.clicked}          
         />
 
-        <Text className={`${styles.skeletonText}`} display={`${loadingState ? 'none' : 'block'} `} sx={{ zIndex: 15, color: '#000000', visibility: 'visible', position: 'absolute' }}>Ładowanie obrazów wysokiej jakości</Text>
+        <Text className={`${styles.skeletonText}`} display={`${loadingState ? 'none' : 'block'} `} >Ładowanie obrazów wysokiej jakości</Text>
         </Skeleton>
     </div>
   )

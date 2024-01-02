@@ -30,7 +30,7 @@ const Home = (props) => {
           name="author"
           content="Code: Kuba Koder = Jakub Grzegorzek, Design: Anita Machura"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favico.png" />
 
       </Head>
       <SietHeader clicked={clickHandler} state={drawerState} />

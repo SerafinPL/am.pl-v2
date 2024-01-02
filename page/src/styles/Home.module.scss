@@ -25,12 +25,12 @@
   width: auto;
   height: 100vh;
   /*loading speed*/
-  background-image: url('../assets/naStrone/melancholik.jpg');
-  background-image: url('../assets/naStrone/ObszarKompozycji.jpg');
-  background-image: url('../assets/naStrone/ostatnidzien.jpg');
-  background-image: url('../assets/naStrone/pandemicdream.jpg');
-  background-image: url('../assets/naStrone/wedrowiec.jpg');
-  background-image: url('../assets/naStrone/melancholik.jpg');
+  background-image: url('../assets/melancholik.jpg');
+  background-image: url('../assets/ObszarKompozycji.jpg');
+  background-image: url('../assets/ostatnidzien.jpg');
+  background-image: url('../assets/pandemicdream.jpg');
+  background-image: url('../assets/wedrowiec.jpg');
+  background-image: url('../assets/melancholik.jpg');
   /*EOF loading speed*/
 
   background-repeat: no-repeat;
@@ -50,35 +50,35 @@
 
     0%,
     19.99% {
-      background-image: url('../assets/naStrone/melancholik.jpg');
+      background-image: url('../assets/melancholik.jpg');
     }
 
     20%,
     39.99% {
 
-      background-image: url('../assets/naStrone/ObszarKompozycji.jpg');
+      background-image: url('../assets/ObszarKompozycji.jpg');
     }
 
     40%,
     59.99% {
 
-      background-image: url('../assets/naStrone/ostatnidzien.jpg');
+      background-image: url('../assets/ostatnidzien.jpg');
     }
 
     60%,
     79.99% {
 
-      background-image: url('../assets/naStrone/pandemicdream.jpg');
+      background-image: url('../assets/pandemicdream.jpg');
     }
 
     80%,
     99.99% {
 
-      background-image: url('../assets/naStrone/wedrowiec.jpg');
+      background-image: url('../assets/wedrowiec.jpg');
     }
 
     100% {
-      background-image: url('../assets/naStrone/melancholik.jpg');
+      background-image: url('../assets/melancholik.jpg');
     }
   }
 

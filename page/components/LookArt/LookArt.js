@@ -34,7 +34,7 @@ const LookArt = (props) => {
         mini        
         />
         <div className={`${styles.full} ${props.blured && styles.blured}`} >
-          <h2>{props.title}</h2>
+          <h3>{props.title}</h3>
           <p>{props.children}</p>
         </div>
       </div>

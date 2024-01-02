@@ -9,7 +9,6 @@
   width: 100vw;
   min-height: 90vh;
 
-
   @mixin look {
     transition: all 300ms;
     position: absolute;
@@ -45,19 +44,19 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      // align-items: 30%;
       width: 100%;
       height: 11vh;
       margin-right: 1%;
       margin-left: 1%;
       padding: 13px;
+      margin-top: 25px;
 
-      h2 {
-        font-size: 1.75em;
+      h3 {
+        font-size: 1.25em;
       }
 
       p {
-        font-size: 1.5em;
+        font-size: 1em;
       }
 
       p,
