@@ -9,7 +9,7 @@ const Footer = ({blured}) => {
     <div className={`${styles.firstBox} ${blured && blurStyle.blured}`} >
       <div className={styles.secondBox}>
         <h3>
-          Designed by <a href="#">Anita Machura</a> powered with ❤️ by <a href="https://kubakoder.pl"> Kuba Koder</a>
+          Designed by <a href="anitamachura.pl">Anita Machura</a> powered with ❤️ by <a href="https://kubakoder.pl"> Kuba Koder</a>
         </h3>
       </div>
     </div>

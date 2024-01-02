@@ -1,7 +1,7 @@
 import React from "react";
 
 import autoMaska from "../../src/assets/autoportret-z-maskami_.jpg"
-import autoKrolik from "../../src/assets/autoportret_z_krolikiem.jpg"
+import autoKrolik from "../../src/assets/ostatnidzien.jpg"
 import autoPort from "../../src/assets/autoportret.jpg"
 import jestSuper from "../../src/assets/jest_super.jpg"
 import matka from "../../src/assets/matka.jpg"
