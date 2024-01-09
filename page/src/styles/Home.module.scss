@@ -1,3 +1,8 @@
+.siteHeader:root {
+  --art-melancholik: '../assets/slider/melancholik.jpg';
+}
+
+
 .container {
   padding: 0;
   overflow-x: hidden;
@@ -25,12 +30,14 @@
   width: auto;
   height: 100vh;
   /*loading speed*/
-  background-image: url('../assets/melancholik.jpg');
-  background-image: url('../assets/ObszarKompozycji.jpg');
-  background-image: url('../assets/ostatnidzien.jpg');
-  background-image: url('../assets/pandemicdream.jpg');
-  background-image: url('../assets/wedrowiec.jpg');
-  background-image: url('../assets/melancholik.jpg');
+
+  background-image: url('../assets/slider/melancholik.jpg'),
+  url('../assets/slider/matka.jpg'),
+  url('../assets/slider/ostatnidzien.jpg'),
+  url('../assets/slider/pandemicdream.jpg'),
+  url('../assets/slider/wedrowiec.jpg'),
+  url('../assets/slider/melancholik.jpg');
+
   /*EOF loading speed*/
 
   background-repeat: no-repeat;
@@ -50,35 +57,31 @@
 
     0%,
     19.99% {
-      background-image: url('../assets/melancholik.jpg');
+      background-image: url('../assets/slider/melancholik.jpg');
     }
 
     20%,
     39.99% {
-
-      background-image: url('../assets/ObszarKompozycji.jpg');
+      background-image: url('../assets/slider/matka.jpg');
     }
 
     40%,
     59.99% {
-
-      background-image: url('../assets/ostatnidzien.jpg');
+      background-image: url('../assets/slider/ostatnidzien.jpg');
     }
 
     60%,
     79.99% {
-
-      background-image: url('../assets/pandemicdream.jpg');
+      background-image: url('../assets/slider/pandemicdream.jpg');
     }
 
     80%,
     99.99% {
-
-      background-image: url('../assets/wedrowiec.jpg');
+      background-image: url('../assets/slider/wedrowiec.jpg');
     }
 
     100% {
-      background-image: url('../assets/melancholik.jpg');
+      background-image: url('../assets/slider/melancholik.jpg');
     }
   }
 

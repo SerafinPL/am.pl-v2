@@ -1,4 +1,8 @@
 
+@font-face {
+  font-family: Helvetica;
+  src: url(../../public/fonts/Helvetica\ Neue\ UltraLight.ttf);
+}
 
 * {
   box-sizing: border-box;

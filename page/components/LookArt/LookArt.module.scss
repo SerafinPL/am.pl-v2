@@ -17,6 +17,11 @@
     background-color: #fff;
   }
 
+  .HelveticaText{
+    font-family: Helvetica;
+  }
+
+
   div.firstLook {
     @include look;
     width: 50%;
