@@ -30,6 +30,8 @@ const Home = (props) => {
           name="author"
           content="Code: Kuba Koder = Jakub Grzegorzek, Design: Anita Machura"
         />
+
+        <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;700&display=swap" rel="stylesheet"></link>
         <link rel="icon" href="/favico.png" />
 
       </Head>

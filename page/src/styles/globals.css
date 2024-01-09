@@ -4,12 +4,13 @@
   src: url(../../public/fonts/Helvetica\ Neue\ UltraLight.ttf);
 }
 
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   transition: filter 200ms 100ms;
-
+  font-family: Eczar;
 }
 
 html,
