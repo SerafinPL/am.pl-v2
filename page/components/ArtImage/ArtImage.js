@@ -9,6 +9,7 @@ import { Text } from '@chakra-ui/react';
 
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import NextJsImage from "./NextJSImg";
 
@@ -19,8 +20,7 @@ const ArtImage = props => {
   const [open, setOpen] = useState(false);
 
   const fullscreenRef = React.useRef(null);
-
-
+  const zoomRef = React.useRef(null);
 
   return (
     <div className={`${styles.ArtBox} ${props.blured && blurStyle.blured} ${props.mini && styles.miniArtBox}`}>
@@ -41,9 +41,10 @@ const ArtImage = props => {
           onLoadingComplete={img => {
             setLoadingState(true)
           }}
-        onClick={() => setOpen(true)}          
+          onClick={() => setOpen(true)}
         />
         <Lightbox
+          plugins={[Fullscreen, Zoom]}
           open={open}
           close={() => setOpen(false)}
           slides={[props.fileName]}
@@ -53,12 +54,19 @@ const ArtImage = props => {
             buttonNext: [props.fileName].length <= 1 ? () => null : undefined,
           }}
           // render={{ slide: NextJsImage }}
-          plugins={[Fullscreen]}
+
           fullscreen={{ ref: fullscreenRef }}
           on={{
             click: () => fullscreenRef.current?.enter(),
           }}
         />
+        <button type="button" onClick={() => zoomRef.current?.zoomIn()}>
+          Zoom In
+        </button>
+
+        <button type="button" onClick={() => zoomRef.current?.zoomOut()}>
+          Zoom Out
+        </button>
 
         <Text className={`${styles.skeletonText}`} display={`${loadingState ? 'none' : 'block'} `} >Ładowanie obrazów wysokiej jakości</Text>
       </Skeleton>
