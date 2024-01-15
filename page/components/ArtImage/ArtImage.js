@@ -47,7 +47,12 @@ const ArtImage = props => {
           open={open}
           close={() => setOpen(false)}
           slides={[props.fileName]}
-          render={{ slide: NextJsImage }}
+          carousel={{ finite: [props.fileName].length <= 1 }}
+          render={{
+            buttonPrev: [props.fileName].length <= 1 ? () => null : undefined,
+            buttonNext: [props.fileName].length <= 1 ? () => null : undefined,
+          }}
+          // render={{ slide: NextJsImage }}
           plugins={[Fullscreen]}
           fullscreen={{ ref: fullscreenRef }}
           on={{
