@@ -22,13 +22,13 @@ function Formspree(props) {
     <>
       <form onSubmit={handleSubmit} className={`${styles.Form} ${props.blured && blurStyle.blured}`} id='kontakt'>
         <h1>Kontakt</h1>
-        <textarea id="message" name="message" placeholder="Twoja wiadomość" />
+        <textarea id="message" name="message" placeholder="Twoja wiadomość..." />
         <div>
           <input
             id="email"
             type="email"
             name="email"
-            placeholder="Adres email"
+            placeholder="Twój e-mail..."
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 

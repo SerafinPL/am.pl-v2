@@ -17,6 +17,9 @@
     background-color: #fff;
   }
 
+
+
+
   div.firstLook {
     @include look;
     width: 50%;
@@ -52,11 +55,14 @@
       margin-top: 25px;
 
       h3 {
-        font-size: 1.25em;
+        font-size: 1.70em;
+        font-weight: bold;
+
       }
 
       p {
-        font-size: 1em;
+        font-size: 1.20em;
+        font-weight: 400;
       }
 
       p,
@@ -94,12 +100,11 @@
         width: 30%;
 
         h2 {
-          font-size: 1.75em;
+          font-size: 2.25em;
         }
 
         p {
-          font-size: 1.25em;
-          font-weight: bold;
+          font-size: 1.75em;
         }
       }
     }

