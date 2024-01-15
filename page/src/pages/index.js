@@ -8,6 +8,10 @@ import Bio from "components/Bio/Bio";
 import ContactForm from "components/ContactForm/ContactForm";
 import Footer from "components/Footer/Footer";
 import GalleryAM from "../../components/GalleryAM/GalleryAM";
+import ArtImageLightBox from "../../components/ArtImage/ArtImageLightBox";
+
+import plew from "../../src/assets/plew.jpg"
+
 
 const Home = (props) => {
 
@@ -39,6 +43,7 @@ const Home = (props) => {
 
       <div className={styles.secondLayer} onClick={() => setDrawerState(false)}>
         <GalleryAM blured={drawerState} />
+        <ArtImageLightBox fileName={plew}/>
         <Bio blured={drawerState} />
         <ContactForm blured={drawerState} />
         <Footer blured={drawerState} />

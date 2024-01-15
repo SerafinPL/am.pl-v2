@@ -4,6 +4,11 @@
   src: url(../../public/fonts/Helvetica\ Neue\ UltraLight.ttf);
 }
 
+button.yarl__navigation_prev,
+button.yarl__navigation_next {
+  display: none;
+}
+
 
 * {
   box-sizing: border-box;
