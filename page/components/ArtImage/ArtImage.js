@@ -60,13 +60,6 @@ const ArtImage = props => {
             click: () => fullscreenRef.current?.enter(),
           }}
         />
-        <button type="button" onClick={() => zoomRef.current?.zoomIn()}>
-          Zoom In
-        </button>
-
-        <button type="button" onClick={() => zoomRef.current?.zoomOut()}>
-          Zoom Out
-        </button>
 
         <Text className={`${styles.skeletonText}`} display={`${loadingState ? 'none' : 'block'} `} >Ładowanie obrazów wysokiej jakości</Text>
       </Skeleton>
