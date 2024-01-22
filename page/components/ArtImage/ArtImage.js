@@ -53,8 +53,6 @@ const ArtImage = props => {
             buttonPrev: [props.fileName].length <= 1 ? () => null : undefined,
             buttonNext: [props.fileName].length <= 1 ? () => null : undefined,
           }}
-          // render={{ slide: NextJsImage }}
-
           fullscreen={{ ref: fullscreenRef }}
           on={{
             click: () => fullscreenRef.current?.enter(),
