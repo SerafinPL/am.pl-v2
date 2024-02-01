@@ -11,6 +11,7 @@ import GalleryAM from "../../components/GalleryAM/GalleryAM";
 import ArtImageLightBox from "../../components/ArtImage/ArtImageLightBox";
 
 import plew from "../../src/assets/plew.jpg"
+import GalleryMode from "../../components/GalleryMode/GalleryMode";
 
 
 const Home = (props) => {
@@ -42,8 +43,9 @@ const Home = (props) => {
       <SietHeader clicked={clickHandler} state={drawerState} />
 
       <div className={styles.secondLayer} onClick={() => setDrawerState(false)}>
+        <GalleryMode />
         <GalleryAM blured={drawerState} />
-        <ArtImageLightBox fileName={plew}/>
+        {/* <ArtImageLightBox fileName={plew}/> */}
         <Bio blured={drawerState} />
         <ContactForm blured={drawerState} />
         <Footer blured={drawerState} />
