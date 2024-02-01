@@ -131,37 +131,24 @@ const GalleryMode = (props) => {
     const fullscreenRef = React.useRef(null);
     const zoomRef = React.useRef(null);
     const ref = React.useRef(null);
-    const [index, setIndex] = useState(-1);
+    const [index, setIndex] = useState(0);
 
 
-    
+
     const stateHandler = (slide) => {
         setFullViewSlide(slide)
         setOpen(true);
     }
 
-    const buttonNote = <Button position='absolute'
-        left='25%'
-        w='50%' p='3px' pl='5%'
-        bottom='0' h='40px'
-        color='black' borderRadius='0' m={0} borderColor='#000' display='block'
-        border='3px solid black' >
-         {<InfoOutlineIcon m={0} boxSize={5} />}  &nbsp;
-        Opis
-        &nbsp;  &nbsp;{<ArrowRightIcon m={0} boxSize={5} />}
-    </Button>
+
 
     const buttonShowFull = <Button position='absolute'
-        left='25%' w='50%' p='3px' pl='5%'
-        top='0'
+        right='3%' top='3%' w='40px' p='3px'
         color='black' borderRadius='0' m={0} borderColor='#000' display='block'
-        border='3px solid black' 
+        border='3px solid black'
         onClick={() => stateHandler(artsFilesList[index])}>
-        {<SearchIcon m={0} boxSize={5} />} 
+        {<SearchIcon m={0} boxSize={5} />}
     </Button>
-
-
-
 
     const buttonNac = (sideRight, click) => {
         return <Button position='absolute'
@@ -179,6 +166,18 @@ const GalleryMode = (props) => {
     const buttonRight = buttonNac(true);
     const buttonLeft = buttonNac(false);
 
+
+    const buttonNote = <Button position='absolute'
+        left='25%'
+        w='50%' p='3px' pl='5%'
+        bottom='0' h='40px'
+        color='black' borderRadius='0' m={0} borderColor='#000' display='block'
+        border='3px solid black' >
+        {<InfoOutlineIcon m={0} boxSize={5} />}  &nbsp;
+        Opis
+        &nbsp;  &nbsp;{<ArrowRightIcon m={0} boxSize={5} />}
+    </Button>;
+
     return (
         <div className={`${props.blured && blurStyle.blured}`} id='art1' style={{ position: 'relative' }}>
             <Lightbox
@@ -187,7 +186,7 @@ const GalleryMode = (props) => {
                 styles={{ container: { backgroundColor: '#fff' } }}
                 on={{
                     click: stateHandler,
-                    view: ({ index: currentIndex }) => setIndex(currentIndex) ,
+                    view: ({ index: currentIndex }) => setIndex(currentIndex),
                 }}
                 index={index}
                 controller={{ ref }}
@@ -199,9 +198,10 @@ const GalleryMode = (props) => {
                     buttonNext: () => buttonRight,
                     slide: NextJsImage
                 }}
-            >
-
-            </Lightbox>
+                noScroll={{
+                    disabled: true
+                }}
+            />
 
             {buttonShowFull}
             {buttonNote}
@@ -220,9 +220,7 @@ const GalleryMode = (props) => {
                 on={{
                     click: () => fullscreenRef.current?.enter(),
                 }}
-                noScroll={{
-                    disabled: false
-                }}
+
             />
 
         </div>
