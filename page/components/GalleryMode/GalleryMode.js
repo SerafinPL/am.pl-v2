@@ -1,4 +1,4 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import NextJsImage from "../ArtImage/NextJSImg";
 import Lightbox from "yet-another-react-lightbox";
@@ -6,6 +6,8 @@ import Inline from "yet-another-react-lightbox/plugins/inline"; 0
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
+
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 
 import autoMaska from "../../src/assets/autoportret-z-maskami_.jpg";
@@ -25,6 +27,11 @@ import FadeInSection from "../FadeFunc/FadeFunc";
 import LookArt from "../LookArt/LookArt";
 
 import blurStyle from "../../src/styles/blurStyle.module.scss";
+
+import { ArrowRightIcon, ArrowLeftIcon, ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons'
+
+
+
 
 
 const artsList = [
@@ -120,8 +127,39 @@ const artsFilesList = artsList.map(el => el.fileName)
 const GalleryMode = (props) => {
 
     const [open, setOpen] = useState(false);
+    const [fullViewSlide, setFullViewSlide] = useState(false);
     const fullscreenRef = React.useRef(null);
     const zoomRef = React.useRef(null);
+    const ref = React.useRef(null);
+
+
+    const stateHandler = (slide) => {
+        console.log(slide);
+        setFullViewSlide(slide)
+        setOpen(true);
+    }
+
+    const nextHandler = () => {
+        ref.current.next();
+
+    }
+
+    
+
+
+    const buttonNac = (sideRight, click) => {
+        return <Button position='absolute'
+            right={`${sideRight ? '3%' : null}`} left={`${!sideRight ? '3%' : null}`}
+            color='black' onClick={sideRight ? ref.current.next : ref.current.prev}/>
+
+    }
+
+    const buttonRight = buttonNac(true)
+
+
+    const buttonLeft = buttonNac(false)
+
+
 
 
     return (
@@ -129,17 +167,23 @@ const GalleryMode = (props) => {
             <Lightbox
                 plugins={[Inline]}
                 slides={artsFilesList}
+                styles={{ container: { backgroundColor: '#fff' } }}
                 on={{
-                    click: () => setOpen(true),
+                    click: stateHandler,
                 }}
-                
+                controller={{ ref }}
                 inline={{
-                    style: { width: "100%", height:"100vh", aspectRatio: "3 / 2", backgroundColor: '#fff' },
+                    style: { width: "81%", maxHeight: "81vh", aspectRatio: "3 / 2", },
                 }}
-                render={{ slide: NextJsImage }}
+                render={{
+                    buttonPrev: () => buttonLeft,
+                    buttonNext: () => buttonRight,
+                    iconPrev: () => <ArrowLeftIcon color='black' />,
+                    iconNext: () => <ArrowRightIcon color='black' />,
+                    slide: NextJsImage
+                }}
             // render={{
-            //     iconPrev: () => <MyPrevIcon />,
-            //     iconNext: () => <MyNextIcon />,
+
             //     iconClose: () => <MyCloseIcon />,
             //   }}
 
@@ -150,7 +194,7 @@ const GalleryMode = (props) => {
                 plugins={[Fullscreen, Zoom]}
                 open={open}
                 close={() => setOpen(false)}
-                slides={artsFilesList[0]}
+                slides={[fullViewSlide]}
                 carousel={{ finite: [props.fileName].length <= 1 }}
                 render={{
                     buttonPrev: [props.fileName].length <= 1 ? () => null : undefined,
@@ -159,6 +203,9 @@ const GalleryMode = (props) => {
                 fullscreen={{ ref: fullscreenRef }}
                 on={{
                     click: () => fullscreenRef.current?.enter(),
+                }}
+                noScroll={{
+                    disabled: false
                 }}
             />
 

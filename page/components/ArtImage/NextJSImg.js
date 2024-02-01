@@ -16,6 +16,7 @@ function isNextJsImage(slide) {
 export default function NextJsImage({ slide, offset,rect }) {
   const { imageFit } = useLightboxProps().carousel;
   const onns = useLightboxProps().on;
+  const carousel = useLightboxProps().carousel;
 
   const cover = isImageSlide(slide) && isImageFitCover(slide, imageFit);
 
@@ -33,7 +34,6 @@ export default function NextJsImage({ slide, offset,rect }) {
       )
     : rect.height;
 
-    // console.log(onns,slide, offset,rect);
 
   return (
     <div style={{ position: "relative", width, height }}>
@@ -46,7 +46,7 @@ export default function NextJsImage({ slide, offset,rect }) {
         placeholder={slide.blurDataURL ? "blur" : undefined}
         style={{ objectFit: cover ? "cover" : "contain" }}
         sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
-        onClick={onns.click}
+        onClick={() => onns.click(slide)}
 
       />
     </div>

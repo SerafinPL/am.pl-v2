@@ -43,8 +43,8 @@ const Home = (props) => {
       <SietHeader clicked={clickHandler} state={drawerState} />
 
       <div className={styles.secondLayer} onClick={() => setDrawerState(false)}>
-        <GalleryMode />
-        <GalleryAM blured={drawerState} />
+        <GalleryMode blured={drawerState}/>
+        {/* <GalleryAM blured={drawerState} /> */}
         {/* <ArtImageLightBox fileName={plew}/> */}
         <Bio blured={drawerState} />
         <ContactForm blured={drawerState} />
