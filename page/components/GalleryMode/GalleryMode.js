@@ -28,7 +28,7 @@ import LookArt from "../LookArt/LookArt";
 
 import blurStyle from "../../src/styles/blurStyle.module.scss";
 
-import { ArrowRightIcon, ArrowLeftIcon, ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons'
+import { ArrowRightIcon, SearchIcon, ChevronRightIcon, ChevronLeftIcon, InfoOutlineIcon } from '@chakra-ui/icons'
 
 
 
@@ -131,18 +131,34 @@ const GalleryMode = (props) => {
     const fullscreenRef = React.useRef(null);
     const zoomRef = React.useRef(null);
     const ref = React.useRef(null);
+    const [index, setIndex] = useState(-1);
 
 
+    
     const stateHandler = (slide) => {
-        console.log(slide);
         setFullViewSlide(slide)
         setOpen(true);
     }
 
-    const nextHandler = () => {
-        ref.current.next();
+    const buttonNote = <Button position='absolute'
+        left='25%'
+        w='50%' p='3px' pl='5%'
+        bottom='0' h='40px'
+        color='black' borderRadius='0' m={0} borderColor='#000' display='block'
+        border='3px solid black' >
+         {<InfoOutlineIcon m={0} boxSize={5} />}  &nbsp;
+        Opis
+        &nbsp;  &nbsp;{<ArrowRightIcon m={0} boxSize={5} />}
+    </Button>
 
-    }
+    const buttonShowFull = <Button position='absolute'
+        left='25%' w='50%' p='3px' pl='5%'
+        top='0'
+        color='black' borderRadius='0' m={0} borderColor='#000' display='block'
+        border='3px solid black' 
+        onClick={() => stateHandler(artsFilesList[index])}>
+        {<SearchIcon m={0} boxSize={5} />} 
+    </Button>
 
 
 
@@ -150,47 +166,45 @@ const GalleryMode = (props) => {
     const buttonNac = (sideRight, click) => {
         return <Button position='absolute'
             right={`${sideRight && '3%'}`} left={`${!sideRight && '3%'}`}
-            color='black' borderRadius='0' m={0} borderColor='#ccd0d5' display='block'
+            bottom='0'
+            color='black' borderRadius='0' m={0} borderColor='#000' display='block'
+            p='3px'
+            border='3px solid black'
             onClick={sideRight ? () => ref.current.next() : () => ref.current.prev()} >
-            {sideRight ? <ArrowRightIcon m={0} /> : <ArrowLeftIcon m={0} />}
-            </Button>
+            {sideRight ? <ChevronRightIcon m={0} w={7} h={7} /> : <ChevronLeftIcon m={0} w={7} h={7} />}
+        </Button>
 
     }
 
     const buttonRight = buttonNac(true);
-
     const buttonLeft = buttonNac(false);
 
-
-
-
     return (
-        <div className={`${props.blured && blurStyle.blured}`} id='art1'>
+        <div className={`${props.blured && blurStyle.blured}`} id='art1' style={{ position: 'relative' }}>
             <Lightbox
                 plugins={[Inline]}
                 slides={artsFilesList}
                 styles={{ container: { backgroundColor: '#fff' } }}
                 on={{
                     click: stateHandler,
+                    view: ({ index: currentIndex }) => setIndex(currentIndex) ,
                 }}
+                index={index}
                 controller={{ ref }}
                 inline={{
-                    style: { width: "81%", maxHeight: "81vh", aspectRatio: "3 / 2", },
+                    style: { width: "100%", minHeight: "81vh", maxHeight: "100vh", aspectRatio: "3 / 2", },
                 }}
                 render={{
                     buttonPrev: () => buttonLeft,
                     buttonNext: () => buttonRight,
-                    // iconPrev: () => <ArrowLeftIcon color='black' />,
-                    // iconNext: () => <ArrowRightIcon color='black' />,
                     slide: NextJsImage
                 }}
-            // render={{
+            >
 
-            //     iconClose: () => <MyCloseIcon />,
-            //   }}
+            </Lightbox>
 
-
-            />
+            {buttonShowFull}
+            {buttonNote}
 
             <Lightbox
                 plugins={[Fullscreen, Zoom]}
