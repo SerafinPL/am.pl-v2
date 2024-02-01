@@ -27,11 +27,9 @@ import FadeInSection from "../FadeFunc/FadeFunc";
 import LookArt from "../LookArt/LookArt";
 
 import blurStyle from "../../src/styles/blurStyle.module.scss";
+import galleryStyle from "./GalleryMode.module.scss";
 
 import { ArrowRightIcon, SearchIcon, ChevronRightIcon, ChevronLeftIcon, InfoOutlineIcon } from '@chakra-ui/icons'
-
-
-
 
 
 const artsList = [
@@ -133,8 +131,6 @@ const GalleryMode = (props) => {
     const ref = React.useRef(null);
     const [index, setIndex] = useState(0);
 
-
-
     const stateHandler = (slide) => {
         setFullViewSlide(slide)
         setOpen(true);
@@ -166,7 +162,6 @@ const GalleryMode = (props) => {
     const buttonRight = buttonNac(true);
     const buttonLeft = buttonNac(false);
 
-
     const buttonNote = <Button position='absolute'
         left='25%'
         w='50%' p='3px' pl='5%'
@@ -178,7 +173,7 @@ const GalleryMode = (props) => {
         &nbsp;  &nbsp;{<ArrowRightIcon m={0} boxSize={5} />}
     </Button>;
 
-    return (
+    return (<div>
         <div className={`${props.blured && blurStyle.blured}`} id='art1' style={{ position: 'relative' }}>
             <Lightbox
                 plugins={[Inline]}
@@ -220,10 +215,9 @@ const GalleryMode = (props) => {
                 on={{
                     click: () => fullscreenRef.current?.enter(),
                 }}
-
             />
-
         </div>
+    </div>
     );
 };
 

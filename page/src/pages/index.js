@@ -12,6 +12,7 @@ import ArtImageLightBox from "../../components/ArtImage/ArtImageLightBox";
 
 import plew from "../../src/assets/plew.jpg"
 import GalleryMode from "../../components/GalleryMode/GalleryMode";
+import GalleryView from "../../components/GalleryMode/GalleryView";
 
 
 const Home = (props) => {
@@ -43,7 +44,8 @@ const Home = (props) => {
       <SietHeader clicked={clickHandler} state={drawerState} />
 
       <div className={styles.secondLayer} onClick={() => setDrawerState(false)}>
-        <GalleryMode blured={drawerState}/>
+        {/* <GalleryMode blured={drawerState}/> */}
+        <GalleryView blured={drawerState}/>
         {/* <GalleryAM blured={drawerState} /> */}
         {/* <ArtImageLightBox fileName={plew}/> */}
         <Bio blured={drawerState} />
