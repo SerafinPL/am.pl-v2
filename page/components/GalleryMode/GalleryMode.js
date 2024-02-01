@@ -144,20 +144,22 @@ const GalleryMode = (props) => {
 
     }
 
-    
+
 
 
     const buttonNac = (sideRight, click) => {
         return <Button position='absolute'
-            right={`${sideRight ? '3%' : null}`} left={`${!sideRight ? '3%' : null}`}
-            color='black' onClick={sideRight ? ref.current.next : ref.current.prev}/>
+            right={`${sideRight && '3%'}`} left={`${!sideRight && '3%'}`}
+            color='black' borderRadius='0' m={0} borderColor='#ccd0d5' display='block'
+            onClick={sideRight ? () => ref.current.next() : () => ref.current.prev()} >
+            {sideRight ? <ArrowRightIcon m={0} /> : <ArrowLeftIcon m={0} />}
+            </Button>
 
     }
 
-    const buttonRight = buttonNac(true)
+    const buttonRight = buttonNac(true);
 
-
-    const buttonLeft = buttonNac(false)
+    const buttonLeft = buttonNac(false);
 
 
 
@@ -178,8 +180,8 @@ const GalleryMode = (props) => {
                 render={{
                     buttonPrev: () => buttonLeft,
                     buttonNext: () => buttonRight,
-                    iconPrev: () => <ArrowLeftIcon color='black' />,
-                    iconNext: () => <ArrowRightIcon color='black' />,
+                    // iconPrev: () => <ArrowLeftIcon color='black' />,
+                    // iconNext: () => <ArrowRightIcon color='black' />,
                     slide: NextJsImage
                 }}
             // render={{
