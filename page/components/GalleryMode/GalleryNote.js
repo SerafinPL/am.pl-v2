@@ -21,7 +21,7 @@ const GalleryNote = (props) => {
 
 
     const buttonNote = <Button position='absolute'
-        left='25%' w='50%' p='3px' bottom='7%' h='40px' border='3px solid black'
+        left='25%' w='50%' p='3px' top='77.4vh' h='40px' border='3px solid black'
         color='black' borderRadius='0' m={0} borderColor='#000' display='block'
         onClick={props.closeNote} >
         {<ArrowLeftIcon m={0} boxSize={5} />} &nbsp;
