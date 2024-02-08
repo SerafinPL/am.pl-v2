@@ -1,4 +1,8 @@
 import Image from "next/image";
+import { useState } from "react";
+import { Skeleton, } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
+
 import {
   isImageFitCover,
   isImageSlide,
@@ -13,10 +17,15 @@ function isNextJsImage(slide) {
   );
 }
 
-export default function NextJsImage({ slide, offset,rect }) {
+export default function NextJsImage({ slide, offset,rect,startColor,endColor }) {
   const { imageFit } = useLightboxProps().carousel;
   const onns = useLightboxProps().on;
   const carousel = useLightboxProps().carousel;
+  // const [loadingState, setLoadingState] = useState(false);
+
+  console.log(onns);
+
+  console.log(carousel);
 
   const cover = isImageSlide(slide) && isImageFitCover(slide, imageFit);
 
@@ -37,6 +46,11 @@ export default function NextJsImage({ slide, offset,rect }) {
 
   return (
     <div style={{ position: "relative", width, height }}>
+       {/* <Skeleton fitContent
+        // className={`${styles.skeletonBase}`}
+        startColor={startColor} endColor={endColor}
+        // isLoaded={loadingState}
+        > */}
       <Image
         fill
         alt=""
@@ -47,8 +61,12 @@ export default function NextJsImage({ slide, offset,rect }) {
         style={{ objectFit: cover ? "cover" : "contain" }}
         sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
         onClick={() => onns.click(slide)}
+        // onLoadingComplete={img => {
+        //   setLoadingState(true)
+        // }}
 
       />
+      {/* </Skeleton> */}
     </div>
   );
 }

@@ -35,4 +35,6 @@ li {
   border: 1px solid #000;
 }
 
-
+.yarl__container{
+  overflow: visible !important;
+}
