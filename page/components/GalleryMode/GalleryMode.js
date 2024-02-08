@@ -7,7 +7,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 
-import { Button } from '@chakra-ui/react'
+import { Button,Box } from '@chakra-ui/react'
 
 import { artsList } from "./artsList";
 
@@ -52,14 +52,13 @@ const GalleryMode = (props) => {
             onClick={sideRight ? () => ref.current.next() : () => ref.current.prev()} >
             {sideRight ? <ChevronRightIcon m={0} w={7} h={7} /> : <ChevronLeftIcon m={0} w={7} h={7} />}
         </Button>
-
     }
 
     const buttonRight = buttonNac(true);
     const buttonLeft = buttonNac(false);
 
     const buttonNote = <Button position='absolute'
-        left='25%' w='50%' p='3px' pl='5%' bottom='0' h='40px' border='3px solid black'
+        left='25%' w='50%' p='3px' pl='5%' top='77.4vh' h='40px' border='3px solid black'
         color='black' borderRadius='0' m={0} borderColor='#000' display='block'
         onClick={props.openNote} >
         {<InfoOutlineIcon m={0} boxSize={5} />}  &nbsp;
@@ -67,8 +66,9 @@ const GalleryMode = (props) => {
         &nbsp;  &nbsp;{<ArrowRightIcon m={0} boxSize={5} />}
     </Button>;
 
-    return (<div>
-        <div className={`${props.blured && blurStyle.blured}`} id='art1' style={{ position: 'relative' }}>
+    return (//<div>
+        <Box className={`${props.blured && blurStyle.blured}`} id='art1' style={{ position: 'relative'  }}
+        w='100vw' h='100vh' p='0' m='0'>
             <Lightbox
                 plugins={[Inline]}
                 slides={artsFilesList}
@@ -110,8 +110,8 @@ const GalleryMode = (props) => {
                     click: () => fullscreenRef.current?.enter(),
                 }}
             />
-        </div>
-    </div>
+        </Box>
+   // </div>
     );
 };
 
