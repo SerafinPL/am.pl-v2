@@ -55,10 +55,3 @@ const Home = (props) => {
 
 export default Home;
 
-// export const getStaticProps = async () => {
-//   return {
-//     props: {
-//       formKey: process.env.NEXT_PUBLIC_ENDP,
-//     },
-//   };
-// };
