@@ -1,16 +1,16 @@
 import React from "react";
 
-import autoMaska from "../../src/assets/autoportret-z-maskami_.jpg"
-import autoKrolik from "../../src/assets/ostatnidzien.jpg"
-import autoPort from "../../src/assets/autoportret.jpg"
-import jestSuper from "../../src/assets/jest_super.jpg"
-import matka from "../../src/assets/matka.jpg"
-import melancholik from "../../src/assets/melancholik.jpg"
-import melancholja from "../../src/assets/melancholja.jpg"
-import miAoAA from "../../src/assets/miAoAA.jpg"
-import reminiscencje from "../../src/assets/reminiscencje.jpg"
-import plew from "../../src/assets/plew.jpg"
-import wedrowiec from "../../src/assets/wedrowiec.jpg"
+import autoMaska from "../../src/assets/autoportret-z-maskami_.jpg";
+import autoKrolik from "../../src/assets/ostatnidzien.jpg";
+import autoPort from "../../src/assets/autoportret.jpg";
+import jestSuper from "../../src/assets/jest_super.jpg";
+import matka from "../../src/assets/matka.jpg";
+import melancholik from "../../src/assets/melancholik.jpg";
+import melancholja from "../../src/assets/melancholja.jpg";
+import miAoAA from "../../src/assets/miAoAA.jpg";
+import reminiscencje from "../../src/assets/reminiscencje.jpg";
+import plew from "../../src/assets/plew.jpg";
+import wedrowiec from "../../src/assets/wedrowiec.jpg";
 
 
 import styles from "./GalleryAM.module.scss";

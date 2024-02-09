@@ -30,5 +30,11 @@ li {
   list-style-type:none;
 }
 
+.yarl__button yarl__navigation_next,
+.yarl__button yarl__navigation_prev{
+  border: 1px solid #000;
+}
 
-
+.yarl__container{
+  overflow: visible !important;
+}
