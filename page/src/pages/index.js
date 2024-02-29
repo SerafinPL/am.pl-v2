@@ -10,6 +10,7 @@ import Footer from "components/Footer/Footer";
 
 import GalleryMode from "../../components/GalleryMode/GalleryMode";
 import GalleryView from "../../components/GalleryMode/GalleryView";
+import BlockingNanoJs from "../../components/blockingNano";
 
 
 const Home = (props) => {
@@ -48,6 +49,7 @@ const Home = (props) => {
         <Bio blured={drawerState} />
         <ContactForm blured={drawerState} />
         <Footer blured={drawerState} />
+        <BlockingNanoJs />
       </div>
     </div>
   );
