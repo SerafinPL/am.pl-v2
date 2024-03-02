@@ -7,8 +7,6 @@ import SietHeader from "components/Header/siteHeader";
 import Bio from "components/Bio/Bio";
 import ContactForm from "components/ContactForm/ContactForm";
 import Footer from "components/Footer/Footer";
-
-import GalleryMode from "../../components/GalleryMode/GalleryMode";
 import GalleryView from "../../components/GalleryMode/GalleryView";
 import BlockingNanoJs from "../../components/blockingNano";
 
@@ -42,10 +40,7 @@ const Home = (props) => {
       <SietHeader clicked={clickHandler} state={drawerState} />
 
       <div className={styles.secondLayer} onClick={() => setDrawerState(false)}>
-        {/* <GalleryMode blured={drawerState}/> */}
-        <GalleryView blured={drawerState}/>
-        {/* <GalleryAM blured={drawerState} /> */}
-        {/* <ArtImageLightBox fileName={plew}/> */}
+        <GalleryView blured={drawerState}/> 
         <Bio blured={drawerState} />
         <ContactForm blured={drawerState} />
         <Footer blured={drawerState} />

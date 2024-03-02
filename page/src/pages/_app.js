@@ -1,10 +1,8 @@
 
 import { Nunito_Sans } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
-import Script from 'next/script';
 import { ChakraProvider } from '@chakra-ui/react'
 import '@/styles/globals.css';
-
 
 const urbanistFont = Nunito_Sans({ subsets: ['latin'] })
 
