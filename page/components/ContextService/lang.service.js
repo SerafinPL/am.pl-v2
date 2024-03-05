@@ -7,7 +7,7 @@ export function ProvLangContext(props) {
     const [isLang, setLang] = useState(process.env.NEXT_PUBLIC_HOST_LANG === 'pl' ? 'pl': 'eng');
 
     const chengeLang = (site) => {
-        console.log(site);
+        // console.log(site);
         if (!site) {
             return setLang(prev => prev === 'pl' ? 'eng' : 'pl');
         } else if (site === 'pl') {

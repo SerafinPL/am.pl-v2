@@ -8,16 +8,19 @@ import Bio from "components/Bio/Bio";
 import ContactForm from "components/ContactForm/ContactForm";
 import Footer from "components/Footer/Footer";
 import GalleryView from "../../components/GalleryMode/GalleryView";
-import BlockingNanoJs from "../../components/blockingNano";
+import NanoJs from "../../components/nano";
 
 
 const Home = (props) => {
 
   const [drawerState, setDrawerState] = useState(false);
 
-  const clickHandler = () => {
+  const clickDrawerHandler = () => {
     setDrawerState(!drawerState);
   }
+
+
+
 
   return (
     <div className={styles.container} >
@@ -37,14 +40,14 @@ const Home = (props) => {
         <link rel="icon" href="/favico.png" />
 
       </Head>
-      <SietHeader clicked={clickHandler} state={drawerState} />
+      <SietHeader clicked={clickDrawerHandler} state={drawerState} />
 
       <div className={styles.secondLayer} onClick={() => setDrawerState(false)}>
         <GalleryView blured={drawerState}/> 
         <Bio blured={drawerState} />
         <ContactForm blured={drawerState} />
         <Footer blured={drawerState} />
-        <BlockingNanoJs />
+        <NanoJs />
       </div>
     </div>
   );
