@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useState, useContext, useRef } from "react";
+import { isPl, LangContext} from "../ContextService/lang.service";
+
 
 import NextJsImage from "../ArtImage/NextJSImg";
 import Lightbox from "yet-another-react-lightbox";
@@ -22,9 +24,10 @@ const GalleryMode = (props) => {
 
     const [open, setOpen] = useState(false);
     const [fullViewSlide, setFullViewSlide] = useState(false);
-    const fullscreenRef = React.useRef(null);
-    const zoomRef = React.useRef(null);
-    const ref = React.useRef(null);
+    const fullscreenRef = useRef(null);
+    const zoomRef = useRef(null);
+    const ref = useRef(null);
+    const { isLang } = useContext(LangContext);
 
     const stateHandler = (slide) => {
         setFullViewSlide(slide)
@@ -100,7 +103,12 @@ const GalleryMode = (props) => {
             <Text display='block'
                 fontSize={{ base: "xl", md: "3xl" }}
                 align='center'>
-                {artsList[props.index].title}, {artsList[props.index].adn.size}
+                { isPl(isLang) ? artsList[props.index].title: artsList[props.index].titleAng}, {artsList[props.index].adn.size}
+            </Text>
+            <Text display='block'
+                fontSize={{ base: "xl", md: "3xl" }}
+                align='center'>
+                { isPl(isLang) ? 'olej na płótnie': 'oli on canvas'}
             </Text>
 
         </Box>

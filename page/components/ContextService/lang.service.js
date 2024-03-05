@@ -40,3 +40,12 @@ export const langAnswer = (lang, pl, eng) => {
 export const isPl = (lang) => {
     return lang === 'pl';
 }
+
+export const secondLang = (lang) => {
+    if (lang === 'pl') {
+        return 'ENG'
+    } else if (lang === 'eng') {
+        return 'PL'
+    }
+    return lang
+}

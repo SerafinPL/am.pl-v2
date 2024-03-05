@@ -1,4 +1,3 @@
-import  { useContext } from "react";
 
 import styles from "@/styles/Home.module.scss";
 import CloseButtonNew from "../Menu/CloseButton/CloseButtonNew";
