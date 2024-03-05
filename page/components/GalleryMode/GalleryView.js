@@ -10,8 +10,7 @@ import GalleryNote from "./GalleryNote";
 const GalleryView = (props) => {
 
     const [index, setIndex] = useState(0);
-    const [note, setNote] = useState(false);
-    
+    const [note, setNote] = useState(false);    
 
     return (
         <Box w='100vw' h='100vh'>

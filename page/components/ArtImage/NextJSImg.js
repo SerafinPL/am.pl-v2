@@ -21,11 +21,6 @@ export default function NextJsImage({ slide, offset,rect,startColor,endColor }) 
   const { imageFit } = useLightboxProps().carousel;
   const onns = useLightboxProps().on;
   const carousel = useLightboxProps().carousel;
-  // const [loadingState, setLoadingState] = useState(false);
-
-  console.log(onns);
-
-  console.log(carousel);
 
   const cover = isImageSlide(slide) && isImageFitCover(slide, imageFit);
 

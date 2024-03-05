@@ -16,7 +16,8 @@ import wedrowiec from "../../src/assets/wedrowiec.jpg";
 export const artsList = [
     {
         startColor: 'teal.500', endColor: 'red.500',
-        fileName: plew, title: "Plew", type: 'portrait',
+        fileName: plew,  type: 'portrait',         
+        title: "Plew", titleAng: "Chaff",
         adn: {
             size: '100x80cm',
             method: ' olej na płótnie',
@@ -24,7 +25,9 @@ export const artsList = [
     },
     {
         startColor: 'yellow.700', endColor: 'green.900',
-        fileName: miAoAA, title: "Miłość", type: 'portrait',
+        fileName: miAoAA, type: 'portrait',
+        title: "Miłość", titleAng: "Love",
+        
         adn: {
             size: '100x70cm',
             method: ' olej na płótnie',
@@ -32,7 +35,8 @@ export const artsList = [
     },
     {
         startColor: 'red.600', endColor: 'gray.900',
-        fileName: jestSuper, title: "2020", type: 'landscape',
+        fileName: jestSuper, type: 'landscape',
+        title: "2020", titleAng: "2020", 
         adn: {
             size: '110x140cm',
             method: ' olej na płótnie',
@@ -40,7 +44,8 @@ export const artsList = [
     },
     {
         startColor: 'yellow.300', endColor: 'teal.600',
-        fileName: matka, title: "Matka", type: 'portrait',
+        fileName: matka, type: 'portrait',
+        title: "Matka", titleAng: "Mother", 
         adn: {
             size: '55x46cm',
             method: ' olej na płótnie',
@@ -48,7 +53,8 @@ export const artsList = [
     },
     {
         startColor: 'pink.200', endColor: 'cyan.400',
-        fileName: autoMaska, title: "Autoportet z maskami", type: 'portrait',
+        fileName: autoMaska, type: 'portrait',
+        title: "Autoportet z maskami", titleAng: "Self-Portrait with Masks", 
         adn: {
             size: '100x70cm',
             method: ' olej na płótnie',
@@ -56,7 +62,8 @@ export const artsList = [
     },
     {
         startColor: 'teal.300', endColor: 'yellow.300',
-        fileName: melancholik, title: "Melancholik", type: 'portrait',
+        fileName: melancholik, type: 'portrait',
+        title: "Melancholik", titleAng: "Melancholic", 
         adn: {
             size: '80x60cm',
             method: ' olej na płótnie',
@@ -64,35 +71,40 @@ export const artsList = [
     },
     {
         startColor: 'gray.300', endColor: 'orange.800',
-        fileName: autoKrolik, title: "Ostatni dzień", type: 'portrait',
+        fileName: autoKrolik, type: 'portrait',
+        title: "Ostatni dzień", titleAng: "The last day", 
         adn: {
             size: '80x60cm',
             method: ' olej na płótnie',
         }
     }, {
         startColor: 'gray.200', endColor: 'black',
-        fileName: melancholja, title: "Melancholja", type: 'portrait',
+        fileName: melancholja, type: 'portrait',
+        title: "Melancholja", titleAng: "Melancholyme", 
         adn: {
             size: '200x140cm',
             method: ' olej na płótnie',
         }
     }, {
         startColor: 'yellow.100', endColor: 'red.500',
-        fileName: autoPort, title: "Autoportret", type: 'portrait',
+        fileName: autoPort, type: 'portrait',
+        title: "Autoportret", titleAng: "Selfportrait", 
         adn: {
             size: '60x50cm',
             method: ' olej na płótnie',
         }
     }, {
         startColor: 'teal.300', endColor: 'blue.700',
-        fileName: wedrowiec, title: "Wędrowiec", type: 'landscape',
+        fileName: wedrowiec, type: 'landscape',
+        title: "Wędrowiec", titleAng: "Wanderer", 
         adn: {
             size: '100x140cm',
             method: ' olej na płótnie',
         }
     }, {
         startColor: 'blue.400', endColor: 'green.400',
-        fileName: reminiscencje, title: "Reminiscencje", type: 'landscape',
+        fileName: reminiscencje, type: 'landscape',
+        title: "Reminiscencje", titleAng: "Reminiscences", 
         adn: {
             size: '140x180cm',
             method: ' olej na płótnie',

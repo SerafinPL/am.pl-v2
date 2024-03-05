@@ -1,4 +1,6 @@
-import React, { useState, useRef } from "react";
+import { useState, useContext, useRef } from "react";
+import { isPl, LangContext} from "../ContextService/lang.service";
+
 
 import NextJsImage from "../ArtImage/NextJSImg";
 import Lightbox from "yet-another-react-lightbox";
@@ -12,7 +14,6 @@ import { Button, Box, Text } from '@chakra-ui/react'
 import { artsList } from "./artsList";
 
 import blurStyle from "../../src/styles/blurStyle.module.scss";
-import galleryStyle from "./GalleryMode.module.scss";
 
 import { ArrowRightIcon, SearchIcon, ChevronRightIcon, ChevronLeftIcon, InfoOutlineIcon } from '@chakra-ui/icons'
 
@@ -23,9 +24,10 @@ const GalleryMode = (props) => {
 
     const [open, setOpen] = useState(false);
     const [fullViewSlide, setFullViewSlide] = useState(false);
-    const fullscreenRef = React.useRef(null);
-    const zoomRef = React.useRef(null);
-    const ref = React.useRef(null);
+    const fullscreenRef = useRef(null);
+    const zoomRef = useRef(null);
+    const ref = useRef(null);
+    const { isLang } = useContext(LangContext);
 
     const stateHandler = (slide) => {
         setFullViewSlide(slide)
@@ -51,7 +53,6 @@ const GalleryMode = (props) => {
             {sideRight ? <ChevronRightIcon m={0} w={7} h={7} /> : <ChevronLeftIcon m={0} w={7} h={7} />}
         </Button>
     }
-    // { base: "none", md: "block" }
     const buttonRight = buttonNac(true);
     const buttonLeft = buttonNac(false);
 
@@ -69,60 +70,65 @@ const GalleryMode = (props) => {
     //     &nbsp;  &nbsp;{<ArrowRightIcon m={0} boxSize={5} />}
     // </Button>;
 
-    return ( <Box className={`${props.blured && blurStyle.blured}`} id='art1' style={{ position: 'relative' ,  overflow:'visible'}}
-            w='100vw' h='71vh' p='0' m='0'>
-            <Lightbox
-                plugins={[Inline]}
-                slides={artsFilesList}
-                styles={{ container: { backgroundColor: '#fff' } }}
-                on={{
-                    click: stateHandler,
-                    view: ({ index: currentIndex }) => props.setIndex(currentIndex),
-                }}
-                index={props.index}
-                controller={{ ref }}
-                inline={{
-                    style: { width: "100%", height: "81vh", maxHeight: "81%", aspectRatio: "3 / 2", overflow:'visible'},
-                }}
-                render={{
-                    buttonPrev: () => buttonLeft,
-                    buttonNext: () => buttonRight,
-                    slide: NextJsImage
-                }}
-                noScroll={{
-                    disabled: true
-                }}
-            />
+    return (<Box className={`${props.blured && blurStyle.blured}`} id='art1' style={{ position: 'relative', overflow: 'visible' }}
+        w='100vw' h='71vh' p='0' m='0'>
+        <Lightbox
+            plugins={[Inline]}
+            slides={artsFilesList}
+            styles={{ container: { backgroundColor: '#fff' } }}
+            on={{
+                click: stateHandler,
+                view: ({ index: currentIndex }) => props.setIndex(currentIndex),
+            }}
+            index={props.index}
+            controller={{ ref }}
+            inline={{
+                style: { width: "100%", height: "81vh", maxHeight: "81%", aspectRatio: "3 / 2", overflow: 'visible' },
+            }}
+            render={{
+                buttonPrev: () => buttonLeft,
+                buttonNext: () => buttonRight,
+                slide: NextJsImage
+            }}
+            noScroll={{
+                disabled: true
+            }}
+        />
 
-            {buttonShowFull}
-            {/* {buttonNote} */}
-            <Box w='100%' 
-            pl='0%' 
+        {buttonShowFull}
+        {/* {buttonNote} */}
+        <Box w='100%'
+            pl='0%'
             pt={{ base: "11%", md: "3%" }}>
-            {/* pt='17%'> */}
-                {/* {{ base: "75vh", md: "93%" }} */}
-                <Text display='block' 
-                fontSize={{ base: "xl", md: "3xl" }} 
-                align='center'>{artsList[props.index].title}, {artsList[props.index].adn.size}</Text>
-                
-            </Box>
-            <Lightbox
-                plugins={[Fullscreen, Zoom]}
-                open={open}
-                close={() => setOpen(false)}
-                slides={[fullViewSlide]}
-                carousel={{ finite: [props.fileName].length <= 1 }}
-                render={{
-                    buttonPrev: [props.fileName].length <= 1 ? () => null : undefined,
-                    buttonNext: [props.fileName].length <= 1 ? () => null : undefined,
-                    slide: NextJsImage
-                }}
-                fullscreen={{ ref: fullscreenRef }}
-                on={{
-                    click: () => fullscreenRef.current?.enter(),
-                }}
-            />
+            <Text display='block'
+                fontSize={{ base: "xl", md: "3xl" }}
+                align='center'>
+                { isPl(isLang) ? artsList[props.index].title: artsList[props.index].titleAng}, {artsList[props.index].adn.size}
+            </Text>
+            <Text display='block'
+                fontSize={{ base: "xl", md: "3xl" }}
+                align='center'>
+                { isPl(isLang) ? 'olej na płótnie': 'oli on canvas'}
+            </Text>
+
         </Box>
+        <Lightbox
+            plugins={[Fullscreen, Zoom]}
+            open={open}
+            close={() => setOpen(false)}
+            slides={[fullViewSlide]}
+            carousel={{ finite: [props.fileName].length <= 1 }}
+            render={{
+                buttonPrev: [props.fileName].length <= 1 ? () => null : undefined,
+                buttonNext: [props.fileName].length <= 1 ? () => null : undefined,
+                slide: NextJsImage
+            }}
+            fullscreen={{ ref: fullscreenRef }}
+            on={{
+                click: () => fullscreenRef.current?.enter(),
+            }}
+        />
+    </Box>
     );
 };
 

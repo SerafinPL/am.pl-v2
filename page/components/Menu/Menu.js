@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { langAnswer, LangContext} from "../ContextService/lang.service";
 import Link from "next/link";
-
-import Image from 'next/image'
-
-import wedrowiec from "../../src/assets/am.png"
-
+import Image from 'next/image';
+import wedrowiec from "../../src/assets/am.png";
 import styles from "./Menu.module.scss";
 
 
 const Menu = (props) => {
+
+  const { isLang } = useContext(LangContext);
+
   return (
     <React.Fragment>
       <nav
@@ -21,13 +23,13 @@ const Menu = (props) => {
         </div>
         <div className={styles.boxMenu}>
           <div className={styles.linksMenu}>
-            <Link href="#art" onClick={props.clicked}><h3>Malarstwo</h3></Link>
+            <Link href="#art" onClick={props.clicked}><h3>{langAnswer(isLang,'Malarstwo','Painting')}</h3></Link>
             <Link href="#bio" onClick={props.clicked}><h3>Bio</h3></Link>
-            <Link href="#kontakt" onClick={props.clicked}><h3>Kontakt</h3></Link>
+            <Link href="#contact" onClick={props.clicked}><h3>{langAnswer(isLang,'Kontakt','Contact')}</h3></Link>
           </div>
           <div className={styles.logoMenu}>
             <Image src={wedrowiec}
-              alt="Logo Anita Machura, Anity Machury"
+              alt="Logo Anity Machury"
               className={styles.logotypAM}
               quality={100}
               sizes="100vw"

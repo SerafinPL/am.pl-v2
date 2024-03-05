@@ -7,16 +7,15 @@ import SietHeader from "components/Header/siteHeader";
 import Bio from "components/Bio/Bio";
 import ContactForm from "components/ContactForm/ContactForm";
 import Footer from "components/Footer/Footer";
-
-import GalleryMode from "../../components/GalleryMode/GalleryMode";
 import GalleryView from "../../components/GalleryMode/GalleryView";
+import NanoJs from "../../components/nano";
 
 
 const Home = (props) => {
 
   const [drawerState, setDrawerState] = useState(false);
 
-  const clickHandler = () => {
+  const clickDrawerHandler = () => {
     setDrawerState(!drawerState);
   }
 
@@ -31,23 +30,21 @@ const Home = (props) => {
         />
         <meta
           name="author"
-          content="Code: Kuba Koder = Jakub Grzegorzek, Design: Anita Machura"
+          content="Code: Kuba Koder , Design: Anita Machura"
         />
 
         <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;700&display=swap" rel="stylesheet"></link>
         <link rel="icon" href="/favico.png" />
 
       </Head>
-      <SietHeader clicked={clickHandler} state={drawerState} />
+      <SietHeader clicked={clickDrawerHandler} state={drawerState} />
 
       <div className={styles.secondLayer} onClick={() => setDrawerState(false)}>
-        {/* <GalleryMode blured={drawerState}/> */}
-        <GalleryView blured={drawerState}/>
-        {/* <GalleryAM blured={drawerState} /> */}
-        {/* <ArtImageLightBox fileName={plew}/> */}
+        <GalleryView blured={drawerState}/> 
         <Bio blured={drawerState} />
         <ContactForm blured={drawerState} />
         <Footer blured={drawerState} />
+        <NanoJs />
       </div>
     </div>
   );
