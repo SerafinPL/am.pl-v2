@@ -9,8 +9,6 @@ const LangButton = (props) => {
 
   const { isLang, chengeLang } = useContext(LangContext);
 
-
-
   return (
     <section className={styles.model} onClick={() => chengeLang()}>
       <div className={`${styles.menu} ${isPl(isLang)}`} >

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import { langAnswer, LangContext } from "../ContextService/lang.service";
 
@@ -27,14 +27,14 @@ function Formspree(props) {
   return (
     <>
       <form onSubmit={handleSubmit} className={`${styles.Form} ${props.blured && blurStyle.blured}`} id='contact'>
-        <h1> {langAnswer(isLang,'Kontakt', 'Contact')}</h1>
-        <textarea id="message" name="message" placeholder={langAnswer(isLang,"Twoja wiadomość...", 'Your message...')} />
+        <h1> {langAnswer(isLang, 'Kontakt', 'Contact')}</h1>
+        <textarea id="message" name="message" placeholder={langAnswer(isLang, "Twoja wiadomość...", 'Your message...')} />
         <div>
           <input
             id="email"
             type="email"
             name="email"
-            placeholder={langAnswer(isLang,"Twój e-mail...", 'Your e-mail...')}
+            placeholder={langAnswer(isLang, "Twój e-mail...", 'Your e-mail...')}
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 
@@ -43,9 +43,12 @@ function Formspree(props) {
             field="message"
             errors={state.errors}
           />
-          <button type="submit">{langAnswer(isLang,"Wyślij Wiadomość", 'Send message')}</button>
+          <button type="submit">{langAnswer(isLang, "Wyślij Wiadomość", 'Send message')}</button>
         </div>
-        <p className={styles.Text}>{langAnswer(isLang,"W sprawie cen obrazów zapraszam do kontaktu poprzez formularz kontaktowy", 'For painting prices, please contact me via the contact form')}</p>
+        <p className={styles.Text}>{langAnswer(isLang,
+          "W sprawie cen obrazów zapraszam do kontaktu poprzez formularz kontaktowy",
+          'For painting prices, please contact me via the contact form')}
+        </p>
       </form>
 
     </>

@@ -1,7 +1,6 @@
 import { useState, useContext, useRef } from "react";
 import { isPl, LangContext} from "../ContextService/lang.service";
 
-
 import NextJsImage from "../ArtImage/NextJSImg";
 import Lightbox from "yet-another-react-lightbox";
 import Inline from "yet-another-react-lightbox/plugins/inline";
