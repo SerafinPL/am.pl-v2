@@ -1,0 +1,132 @@
+.LookArt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  transition: all 300ms;
+  transition: filter 250ms;
+  position: relative;
+  width: 100vw;
+  min-height: 90vh;
+
+  @mixin look {
+    transition: all 300ms;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    background-color: #fff;
+  }
+
+
+
+
+  div.firstLook {
+    @include look;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100vw;
+    left: 0%;
+    height: 100%;
+
+    &.firstOpen {
+      left: -200%;
+    }
+  }
+
+  div.secondLook {
+    @include look;
+    width: 100%;
+    height: 100;
+    left: 200%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .full {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 11vh;
+      margin-right: 1%;
+      margin-left: 1%;
+      padding: 13px;
+      margin-top: 25px;
+
+      h3 {
+        font-size: 1.70em;
+        font-weight: bold;
+
+      }
+
+      p {
+        font-size: 1.20em;
+        font-weight: 400;
+      }
+
+      p,
+      h2 {
+        color: #000;
+        background-color: #fff;
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 100%;
+      }
+
+      &.blured {
+        filter: blur(7px);
+      }
+    }
+
+    &.secondOpen {
+      left: 0%;
+    }
+  }
+
+  @media screen and (min-width: 750px),
+  (orientation: landscape) {
+
+    height: 100vh;
+
+    div.secondLook {
+      flex-direction: row;
+      align-items: center;
+      height: 100vh;
+
+
+      .full {
+        height: 100%;
+        width: 30%;
+
+        h2 {
+          font-size: 2.25em;
+        }
+
+        p {
+          font-size: 1.75em;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (min-width: 750px) {}
+
+  @media screen and (min-width: 1000px) {
+    height: 100vh;
+
+
+    .full {
+
+      h2 {
+        font-size: 3.33em;
+      }
+
+      p {
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+    }
+  }
+}

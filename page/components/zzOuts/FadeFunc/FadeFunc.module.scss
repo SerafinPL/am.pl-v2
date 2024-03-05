@@ -1,0 +1,19 @@
+
+
+
+
+.fadeInSection {
+    padding-bottom: 13vh;
+
+    opacity: 0;
+    transform: translateY(25vh);
+    visibility: hidden;
+    transition: opacity 700ms ease-out, transform 300ms ease-out,
+      visibility 700ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
+  .fadeInSection.isVisible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
