@@ -1,6 +1,6 @@
 {
   "name": "page",
-  "version": "2.1.07",
+  "version": "2.1.13",
   "private": true,
   "scripts": {
     "dev": "next dev",

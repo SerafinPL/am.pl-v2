@@ -19,9 +19,6 @@ const Home = (props) => {
     setDrawerState(!drawerState);
   }
 
-
-
-
   return (
     <div className={styles.container} >
       <Head>
@@ -33,7 +30,7 @@ const Home = (props) => {
         />
         <meta
           name="author"
-          content="Code: Kuba Koder = Jakub Grzegorzek, Design: Anita Machura"
+          content="Code: Kuba Koder , Design: Anita Machura"
         />
 
         <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;700&display=swap" rel="stylesheet"></link>
