@@ -1,6 +1,6 @@
 import React from "react";
 
-import ArtImage from "../ArtImage/ArtImage";
+import ArtImage from "../zzOuts/GalleryAM/ArtImage";
 
 import styles from "./LookArt.module.scss";
 

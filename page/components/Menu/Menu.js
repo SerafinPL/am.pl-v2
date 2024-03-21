@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import { langAnswer, LangContext} from "../ContextService/lang.service";
 import Link from "next/link";
@@ -6,13 +6,12 @@ import Image from 'next/image';
 import wedrowiec from "../../src/assets/am.png";
 import styles from "./Menu.module.scss";
 
-
 const Menu = (props) => {
 
   const { isLang } = useContext(LangContext);
 
   return (
-    <React.Fragment>
+    <>
       <nav
         id="menuDrawer"
         className={`${styles.navDrawer} ${props.open ? styles.openDrawer : styles.closeDrawer
@@ -38,7 +37,7 @@ const Menu = (props) => {
         </div>
 
       </nav>
-    </React.Fragment>
+    </>
   );
 };
 

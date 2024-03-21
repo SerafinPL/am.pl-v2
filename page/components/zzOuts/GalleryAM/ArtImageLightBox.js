@@ -9,7 +9,7 @@ import { Text } from '@chakra-ui/react';
 
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import NextJsImage from "./NextJSImg";
+import NextJsImage from "../../ArtImage/NextJSImg";
 
 
 const ArtImageLightBox = props => {
