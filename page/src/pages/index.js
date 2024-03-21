@@ -8,7 +8,7 @@ import Bio from "components/Bio/Bio";
 import ContactForm from "components/ContactForm/ContactForm";
 import Footer from "components/Footer/Footer";
 import GalleryView from "../../components/GalleryMode/GalleryView";
-import NanoJs from "../../components/nano";
+import NanoGh from "../../components/nanoGhgi";
 
 
 const Home = (props) => {
@@ -44,7 +44,7 @@ const Home = (props) => {
         <Bio blured={drawerState} />
         <ContactForm blured={drawerState} />
         <Footer blured={drawerState} />
-        <NanoJs />
+        <NanoGh />
       </div>
     </div>
   );
