@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
-import { Skeleton, } from '@chakra-ui/react';
-import { Text } from '@chakra-ui/react';
+
 
 import {
   isImageFitCover,
@@ -41,11 +39,7 @@ export default function NextJsImage({ slide, offset,rect,startColor,endColor }) 
 
   return (
     <div style={{ position: "relative", width, height }}>
-       {/* <Skeleton fitContent
-        // className={`${styles.skeletonBase}`}
-        startColor={startColor} endColor={endColor}
-        // isLoaded={loadingState}
-        > */}
+  
       <Image
         fill
         alt=""
@@ -61,7 +55,7 @@ export default function NextJsImage({ slide, offset,rect,startColor,endColor }) 
         // }}
 
       />
-      {/* </Skeleton> */}
+    
     </div>
   );
 }
