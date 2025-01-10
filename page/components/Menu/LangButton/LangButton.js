@@ -5,7 +5,7 @@ import { secondLang, LangContext, isPl } from "../../ContextService/lang.service
 import styles from "./LangButton.module.scss";
 
 
-const LangButton = (props) => {
+const LangButton = () => {
 
   const { isLang, chengeLang } = useContext(LangContext);
 

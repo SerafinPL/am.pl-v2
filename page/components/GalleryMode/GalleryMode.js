@@ -14,7 +14,7 @@ import { artsList } from "./artsList";
 
 import blurStyle from "../../src/styles/blurStyle.module.scss";
 
-import { ArrowRightIcon, SearchIcon, ChevronRightIcon, ChevronLeftIcon, InfoOutlineIcon } from '@chakra-ui/icons'
+import { SearchIcon, ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons'
 
 
 const artsFilesList = artsList.map(el => el.fileName)
@@ -24,7 +24,6 @@ const GalleryMode = (props) => {
     const [open, setOpen] = useState(false);
     const [fullViewSlide, setFullViewSlide] = useState(false);
     const fullscreenRef = useRef(null);
-    const zoomRef = useRef(null);
     const ref = useRef(null);
     const { isLang } = useContext(LangContext);
 
@@ -55,20 +54,6 @@ const GalleryMode = (props) => {
     const buttonRight = buttonNac(true);
     const buttonLeft = buttonNac(false);
 
-    // const buttonNote = <Button position='absolute'
-    // p='3px'  h='40px' border='3px solid black'
-    //     pl={{ base: "5%", md: "0%" }}
-    //     w={{ base: "50%", md: "25%" }}
-    //     maxW={{ base: "50%", md: "125px" }}
-    //     top={{ base: "75vh", md: "93%" }}
-    //     right={{ base: "25%", md: "7%" }}
-    //     color='black' borderRadius='0' m={0} borderColor='#000' display='block'
-    //     onClick={props.openNote} >
-    //     {<InfoOutlineIcon m={0} boxSize={5} />}  &nbsp;
-    //     Opis
-    //     &nbsp;  &nbsp;{<ArrowRightIcon m={0} boxSize={5} />}
-    // </Button>;
-
     return (<Box className={`${props.blured && blurStyle.blured}`} id='art1' style={{ position: 'relative', overflow: 'visible' }}
         w='100vw' h='71vh' p='0' m='0'>
         <Lightbox
@@ -95,7 +80,6 @@ const GalleryMode = (props) => {
         />
 
         {buttonShowFull}
-        {/* {buttonNote} */}
         <Box w='100%'
             pl='0%'
             pt={{ base: "11%", md: "3%" }}>

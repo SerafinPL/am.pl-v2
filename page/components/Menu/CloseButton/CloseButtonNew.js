@@ -3,7 +3,6 @@ import React from "react";
 
 import styles from "./CloseButton.module.scss";
 
-
 const CloseButton = (props) => {
   return (
     <section className={styles.model}>
@@ -15,6 +14,5 @@ const CloseButton = (props) => {
     </section>
   )
 }
-
 
 export default CloseButton;
