@@ -4,17 +4,18 @@ export const LangContext = createContext();
 
 export function ProvLangContext(props) {
 
-    const [isLang, setLang] = useState(process.env.NEXT_PUBLIC_HOST_LANG === 'pl' ? 'pl': 'eng');
+    const [isLang, setLang] = useState(process.env.NEXT_PUBLIC_HOST_LANG === 'pl' ? 'pl' : 'eng');
 
     const chengeLang = (site) => {
         if (!site) {
             return setLang(prev => prev === 'pl' ? 'eng' : 'pl');
-        } else if (site === 'pl') {
+        }
+        if (site === 'pl') {
             return setLang('pl');
-        } else if (site === 'eng') {
+        }
+        if (site === 'eng') {
             return setLang('eng');
         }
-
     }
 
     return (
@@ -23,9 +24,6 @@ export function ProvLangContext(props) {
         </LangContext.Provider>
     );
 }
-
-
-
 
 export const langAnswer = (lang, pl, eng) => {
     if (lang === 'pl') {
