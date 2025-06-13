@@ -14,7 +14,6 @@ export function ProvLangContext(props) {
         } else if (site === 'eng') {
             return setLang('eng');
         }
-
     }
 
     return (
@@ -24,16 +23,13 @@ export function ProvLangContext(props) {
     );
 }
 
-
-
-
 export const langAnswer = (lang, pl, eng) => {
     if (lang === 'pl') {
-        return pl
+        return pl;
     } else if (lang === 'eng') {
-        return eng
+        return eng;
     }
-    return lang
+    return lang;
 }
 
 export const isPl = (lang) => {
@@ -42,9 +38,9 @@ export const isPl = (lang) => {
 
 export const secondLang = (lang) => {
     if (lang === 'pl') {
-        return 'ENG'
+        return 'ENG';
     } else if (lang === 'eng') {
-        return 'PL'
+        return 'PL';
     }
-    return lang
+    return lang;
 }

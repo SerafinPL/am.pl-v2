@@ -1,13 +1,9 @@
 import { useContext } from "react";
-
+import { useForm, ValidationError } from "@formspree/react";
 import { langAnswer, LangContext } from "../ContextService/lang.service";
-
+import ContactModal from "./ContactModal";
 import styles from "./formspree.module.scss";
 import blurStyle from "../../src/styles/blurStyle.module.scss";
-
-import ContactModal from "./ContactModal";
-
-import { useForm, ValidationError } from "@formspree/react";
 
 function Formspree(props) {
 
@@ -21,12 +17,11 @@ function Formspree(props) {
   </>;
 
   if (state.succeeded) {
-    // return modal;
     return <p className={styles.Text}>Dziękuje za wysłanie wiadomości</p>;
   }
   return (
     <>
-      <form onSubmit={handleSubmit} className={`${styles.Form} ${props.blured && blurStyle.blured}`} id='contact'>
+      <form onSubmit={handleSubmit} className={`${styles.Form} ${props.blured ? blurStyle.blured : ''}`} id='contact'>
         <h1> {langAnswer(isLang, 'Kontakt', 'Contact')}</h1>
         <textarea id="message" name="message" placeholder={langAnswer(isLang, "Twoja wiadomość...", 'Your message...')} />
         <div>
@@ -50,7 +45,6 @@ function Formspree(props) {
           'For painting prices, please contact me via the contact form')}
         </p>
       </form>
-
     </>
   );
 }
