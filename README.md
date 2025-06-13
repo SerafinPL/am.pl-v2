@@ -25,6 +25,7 @@ TailwindCSS / SCSS
 - implement from graphic design
 - server less contact from
 - analytics traffic on site
+- multilanguage config startup by env 
 
 ## 🚀 About Me
 ![Logo](https://kubakoder.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.5d6e1adf.png&w=48&q=75)
