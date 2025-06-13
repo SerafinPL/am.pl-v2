@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-
 import {
   isImageFitCover,
   isImageSlide,
