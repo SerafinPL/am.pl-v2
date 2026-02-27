@@ -6,7 +6,7 @@ This is an earlier version of the artist's website. The artist changed their vis
 
 [Current website - www.anitamachura.pl](https://www.anitamachura.pl)
 
-[This legacy website](https://kk2-snowy.vercel.app/)
+[This legacy website](https://ampl-v2-dev.vercel.app/)
 
 ##
 
