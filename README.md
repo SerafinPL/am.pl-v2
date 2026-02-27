@@ -14,6 +14,8 @@ This is an earlier version of the artist's website. The artist changed their vis
 
 ![Static Badge](https://img.shields.io/badge/linux-mint-xfce?style=plastic&logo=linuxmint)
 ![Static Badge](https://img.shields.io/badge/git_at_-github-ex?style=plastic&logo=git&logoColor=F05032&color=F05032)
+![Static Badge](https://img.shields.io/badge/npm-9.5.1-ex?style=plastic&logo=npm&labelColor=%23CB3837&color=%232d2d2d)
+
 
 ![Static Badge](https://img.shields.io/badge/react-18.2.0-ex?style=plastic&logo=react&logoColor=61DAFB&color=%2361DAFB)
 ![Static Badge](https://img.shields.io/badge/nextjs-13.4.7-ex?style=plastic&logo=nextdotjs&logoColor=000000&labelColor=ffffff&color=000000)
